@@ -196,7 +196,8 @@ h2 {
   transition: border-color .3s, color .3s, background-color .3s;
 }
 .video {
-    height: 50vh;
+    height: 55vh;
+    border-radius: 4px;
 }
 
 /* section 4 */
@@ -206,9 +207,9 @@ h2 {
     padding-inline: 5em;
     padding-block: 3em;
 }
-.white-text {
+.white-texts {
     color: #fff;
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 500;
     
 
@@ -220,6 +221,7 @@ h2 {
 }
 .imges {
     height: 50vh;
+    border-radius: 4px;
 }
 .image-text {
     font-size: 15px;
@@ -294,6 +296,7 @@ footer {
     flex-direction: column;
     padding: 10px;
     display: flex;
+    border-radius: 3px;
 }
 .top-block-card{
     grid-column-gap: 16px;
