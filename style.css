@@ -37,6 +37,11 @@ nav {
   font-weight: 300;
   font-size: 1.5em;
   margin-right: 2em;
+  margin-bottom: 2px;
+  
+}
+.nav-link-title:hover{
+    text-decoration: underline;
 }
 
 .content {
@@ -501,12 +506,12 @@ li {
 }
 
 /* Membership */
-#membership {
-  background-image: url(images/saif71-com-DHj4B4d-Gaw-unsplash.jpg);
+#team {
+  background-image: url(images/grass-sport-tennis-ball-design-lawn-green-color-generative-ai.jpg);
   background-repeat: no-repeat;
   background-size: fill;
   height: 100vh;
-  opacity: 5;
+  opacity: 1;
   color: #fff;
 }
 
