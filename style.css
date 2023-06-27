@@ -5,6 +5,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
 body {
   font-family: "satoshi", sans-serif;
 }
@@ -20,6 +21,7 @@ a {
   color: white;
   text-decoration: none;
 }
+
 span {
   font-weight: 300;
   font-size: 2em;
@@ -38,9 +40,10 @@ nav {
   font-size: 1.5em;
   margin-right: 2em;
   margin-bottom: 2px;
-  
+
 }
-.nav-link-title:hover{
+
+.nav-link-title:hover {
   padding-bottom: 3px;
   border-bottom: 1px solid white;
 }
@@ -180,6 +183,7 @@ h1 {
   padding-block: 6em;
   padding-inline: 3em;
   display: flex;
+  align-items: center;
 }
 
 h2 {
@@ -209,9 +213,13 @@ h2 {
   transition: border-color 0.3s, color 0.3s, background-color 0.3s;
 }
 
-.video {
-  height: 55vh;
-  border-radius: 4px;
+#image {
+  width: 50%;
+}
+
+#image video {
+  width: 100%;
+  border-radius: 15px;
 }
 
 /* section 4 */
@@ -515,6 +523,7 @@ li {
   opacity: 1;
   color: #fff;
 }
+
 #team {
   background-image: url(./images/grass-sport-tennis-ball-design-lawn-green-color-generative-ai.jpg);
   background-repeat: no-repeat;
