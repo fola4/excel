@@ -15,12 +15,14 @@ function CardPlan({name, price, description}) {
 
       {/* Card Bottom */}
       <div className="flex flex-col justify-between h-full items-center gap-y-5">
-        <p className="text-center">{description}</p>
+        <p className="text-center text-lg">{description}</p>
 
         <div>
-          <button className='btn3 border-red-600 text-red-500 hover:bg-red-600 hover:text-black hover:font-extralight hover:border-transparent'>
-            Join
-          </button>
+          <a href="/membership#">
+            <button className='btn3 bg-red-900 text-black border-transparent hover:border-red-600 hover:bg-transparent hover:text-white'>
+              Join
+            </button>
+          </a>
         </div>
       </div>
     </div>

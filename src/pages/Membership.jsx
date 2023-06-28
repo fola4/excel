@@ -13,7 +13,7 @@ function Membership() {
         <div className="grid grid-cols-2 gap-x-5 px-8 relative z-20">
 
           <div className="self-center">
-            <h2 className="text-7xl pt-2 mb-0">Get In Touch</h2>
+            <h2 id="getInTouch" className="text-7xl pt-2 mb-0">Get In Touch</h2>
             <p className="text-2xl py-10 border-b border-gray-400 font-thin">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto tenetur similique nostrum corrupti officia aliquid excepturi assumenda dolorum tempore culpa? Quaerat dolor error harum enim libero adipisci mollitia, perferendis placeat.
             </p>
@@ -56,11 +56,6 @@ function Membership() {
         
         
       </header>
-
-      
-      {/* <!-- footer --> */}
-      <Footer />
-      
     </div>
   );
 }

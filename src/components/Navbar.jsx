@@ -1,15 +1,16 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 function Navbar() {
   return (
-    <nav>
+    <nav className='relative z-30'>
       <span><a href="#">Badminton Excel</a></span>
 
       <div className="nav-link">
-        <a href="./index.html" className="nav-link-title">Home</a>
-        <a href="./team.html" className="nav-link-title">Our team</a>
-        <a href="./membership.html" className="nav-link-title">Membership</a>
-        <a href="./about.html" className="nav-link-title">About Us</a>
+        <NavLink to="/" className="nav-link-title">Home</NavLink>
+        <NavLink to="/team" className="nav-link-title">Our team</NavLink>
+        <NavLink to="/membership" className="nav-link-title">Membership</NavLink>
+        <NavLink to="/about" className="nav-link-title">About Us</NavLink>
       </div>
     </nav>
   );

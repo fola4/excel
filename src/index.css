@@ -38,12 +38,22 @@ nav {
   font-size: 1.5em;
   margin-right: 2em;
   margin-bottom: 2px;
-
+  padding-bottom: 5px;
+  transition: border 0.2s ease;
+  border-bottom: 2px solid transparent;
 }
 
 .nav-link-title:hover {
-  padding-bottom: 3px;
-  border-bottom: 1px solid white;
+  border-color: rgb(255, 235, 235);
+}
+
+/* rgb(220 38 38) */
+.active {
+  border-color: rgb(220 38 38);
+}
+
+.nav-link-title.active:hover {
+  border-color: rgb(220 38 38);
 }
 
 .content {
@@ -187,7 +197,7 @@ h2 {
 
 @layer utilities {
   .btn3 {
-    @apply border capitalize rounded-[40px] py-[5px] px-12 font-thin text-xl transition inline-block
+    @apply border capitalize rounded-[40px] py-[5px] px-12 text-xl inline-block transition font-medium
   }
 }
 
@@ -326,13 +336,12 @@ li {
 }
 
 .copyright {
-  font-size: 15px;
   margin-block: 20px;
 }
 
 /* ABOUT US */
 #about-us {
-  background-image: url(./assets/images/new\ shuttlecork.jpg);
+  background-image: url(./assets/images/newShuttlecork.jpg);
   background-repeat: no-repeat;
   background-size: fill;
   height: 100vh;
@@ -355,7 +364,6 @@ li {
 .block-wrapper {
   display: flex;
   justify-content: space-between;
-  margin: 10rem 2rem 2rem 2rem;
   /* padding: 6em; */
 }
 

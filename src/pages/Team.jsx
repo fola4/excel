@@ -51,11 +51,6 @@ function Team() {
 
 
       </section>
-
-      
-      {/* <!-- footer --> */}
-        <Footer />
-      
     </div>
   );
 }

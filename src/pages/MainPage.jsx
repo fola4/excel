@@ -2,6 +2,7 @@ import React from 'react';
 import Footer from '../components/Footer';
 import { craig, video } from '../assets/images'
 import Navbar from '../components/Navbar';
+import { Link } from 'react-router-dom';
 
 function MainPage() {
   return (
@@ -27,7 +28,7 @@ function MainPage() {
             </div>
 
             <button className="button">
-              <a href="#" className="btn1">Join Us Now</a>
+              <a href="/membership" className="btn1">Join Us Now</a>
             </button>
           </div>
         </div>
@@ -42,7 +43,7 @@ function MainPage() {
             We are a mixed bunch of friendly, social badminton fans based in the borough of Barnet, North London. Everyone is welcome to our club regardless of age, gender, capacity or abilities.
           </p>
           <div className="button">
-              <a href="#" className="btn2">Get In Touch</a>
+              <a href="/membership#getInTouch" className="btn2">Get In Touch</a>
             </div>
         </div>
         <div id="stats">
@@ -79,7 +80,7 @@ function MainPage() {
             Founded by diverse badminton fans in Barnet, London, We welcomes all abilities, providing coaching and family sessions.
           </h2>
           
-          <a href="./about.html">
+          <a href="/about">
             <button className="btn3 border-black text-black hover:bg-black hover:text-white">
               About Us
             </button>
@@ -124,11 +125,7 @@ function MainPage() {
         <hr />
         <p id="quotes">- Gail Emms</p>
       </article>
-      
-
-      {/* <!-- footer --> */}
-      <Footer />
-      
+            
     </div>
   );
 }

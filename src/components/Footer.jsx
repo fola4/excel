@@ -7,7 +7,7 @@ function Footer() {
     <footer className="bg-[#fefbf8] px-12">
       <div className="w-full flex flex-col justify-between mb-20">
         <div className='flex justify-between items-center my-20'>
-          <span className='text-red-600'>MEMBERSHIP</span>
+          <span className='text-red-600 text-5xl'>MEMBERSHIP</span>
           
           <p className="text-black text-7xl font-medium">
             Select the best plan
@@ -37,23 +37,25 @@ function Footer() {
 
         <div>
           <h4 className="text-[80px] mb-2 font-semibold">Let's play</h4>
-          <button className="btn3 py-3 px-2 text-black border-black hover:bg-black hover:text-white">Register with us !</button>
+          <a href="/membership">
+            <button className="btn3 py-3 px-2 text-black border-black hover:bg-black hover:text-white">Register with us !</button>
+          </a>
         </div>
       </div>
 
       <div className="social">
       <ul>
         <li><a href="#" className="social-icon">
-          <i className="fa-brands fa-instagram fa-beat mr-1" style={{color: '#818181'}}></i>
+          <i className="fa-brands fa-instagram fa-beat mr-2" style={{color: 'rgb(220 38 38)'}}></i>
           Instagram</a></li>
         <li><a href="#" className="social-icon">
-          <i className="fa-brands fa-facebook fa-shake mr-1" style={{color: '#818181'}}></i>
+          <i className="fa-brands fa-facebook fa-shake mr-2" style={{color: '#1877F2'}}></i>
           Facebook</a></li>
         <li><a href="#" className="social-icon">
-          <i className="fa-brands fa-twitter fa-bounce mr-1" style={{color: '#818181'}}></i>
+          <i className="fa-brands fa-twitter fa-bounce mr-2" style={{color: '#1DA1F2'}}></i>
           Twitter</a></li>
       </ul>
-      <p className="copyright">&copy;Badminton Excel. All Rights Reserved 2023. </p>
+      <p className="copyright text-sm uppercase tracking-widest">&copy;Badminton Excel. All Rights Reserved 2023. </p>
       </div>
     </footer>
   );
