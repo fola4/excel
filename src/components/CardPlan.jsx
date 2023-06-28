@@ -18,7 +18,7 @@ function CardPlan({name, price, description}) {
         <p className="text-center">{description}</p>
 
         <div>
-          <button className='btn3'>
+          <button className='btn3 hover:bg-white hover:text-black hover:font-extralight'>
             Join
           </button>
         </div>

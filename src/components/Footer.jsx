@@ -20,6 +20,7 @@ function Footer() {
               name={plan.name}
               price={plan.price}
               description={plan.description}
+              key={plan.name}
             />
           ))}
         </div>
@@ -31,12 +32,12 @@ function Footer() {
         <div>
           <a href="#" id="logo">
             <span>Badminton Excel</span>
-          <p class="card-text">Embrace Diversity, Elevate Skills,<br /> Achieve Fitness!</p></a>
+          <p className="card-text">Embrace Diversity, Elevate Skills,<br /> Achieve Fitness!</p></a>
         </div>
-          
+
         <div>
           <h4 className="text-[80px] mb-2 font-semibold">Let's play</h4>
-          <button className="btn3 py-3 px-2">Register with us !</button>
+          <button className="btn3 py-3 px-2 text-black border-black hover:bg-black hover:text-white">Register with us !</button>
         </div>
       </div>
 

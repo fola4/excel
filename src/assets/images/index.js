@@ -8,6 +8,7 @@ import threeCorks from './saif71-com-DHj4B4d-Gaw-unsplash.jpg'
 import singleCork from './saif71-com-IHYoOsWkufQ-unsplash.jpg'
 import corkNet from './stephan-rothe-VePgmkq3hHI-unsplash.jpg'
 import twoRackets from './xuanming-U5epRU6sY_A-unsplash (1).jpg'
+import video from './pexels-林林-5991157-1920x1080-50fps.mp4'
 
 export {
   oldRacketCork,
@@ -19,5 +20,6 @@ export {
   threeCorks,
   singleCork,
   corkNet,
-  twoRackets
+  twoRackets,
+  video
 };

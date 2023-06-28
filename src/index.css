@@ -3,15 +3,9 @@
 @tailwind utilities;
 
 /* @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;1,700&display=swap'); */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
 
-body {
-  font-family: "satoshi", sans-serif;
+* {
+  scroll-behavior: smooth;
 }
 
 header {
@@ -57,27 +51,23 @@ nav {
   color: white;
   text-align: center;
   flex-direction: column;
-  /* align-items: center; */
-  font-family: "satoshi", sans-serif;
   display: flex;
   font-size: 45px;
-  /* font-weight: 100; */
   line-height: 1;
 }
 
-.content,
-h1 {
+.content, h1 {
   font-weight: 500;
 }
 
 .hero1 {
-  width: 100%;
-  justify-content: center;
-  align-items: center;
+  font-size: 0.5em;
   margin-top: 40px;
   margin-bottom: 50px;
+  width: 100%;
   display: flex;
-  font-size: 0.5em;
+  justify-content: center;
+  align-items: center;
 }
 
 .dot-block {
@@ -121,8 +111,7 @@ h1 {
   align-items: center;
 }
 
-.texts,
-h1 {
+.texts, h1 {
   padding-bottom: 40px;
 }
 
@@ -198,7 +187,7 @@ h2 {
 
 @layer utilities {
   .btn3 {
-    @apply border border-white capitalize bg-transparent rounded-[40px] py-[5px] px-12 font-thin text-xl transition inline-block text-white
+    @apply border capitalize rounded-[40px] py-[5px] px-12 font-thin text-xl transition inline-block
   }
 }
 
@@ -220,11 +209,11 @@ h2 {
 }
 
 /* section 4 */
-#black-background2 {
+.black-background2 {
   color: #818181;
   background-color: #000;
-  padding-inline: 5em;
-  padding-block: 3em;
+  /* padding-inline: 5em;
+  padding-block: 3em; */
 }
 
 .white-texts {
@@ -271,18 +260,6 @@ hr {
 }
 
 /* footer */
-
-/* .card-footer {
-  grid-template:
-    ". ."
-    "Area Area" / 1fr 1fr;
-  grid-template-rows: auto auto;
-  grid-template-columns: auto auto auto;
-  grid-template-areas:
-    ". ."
-    "Area Area";
-} */
-
 .card-footer {
   width: 100%;
   grid-column-gap: 30px;
@@ -395,7 +372,6 @@ li {
 }
 
 .block-wrapper div p {
-  font-family: "satoshi", sans-serif;
   font-size: 20px;
   font-weight: 200;
   margin-top: 5rem;
@@ -417,7 +393,6 @@ li {
 }
 
 .block-wrapper2 div p {
-  font-family: "satoshi", sans-serif;
   font-size: 20px;
   font-weight: 200;
   margin-top: 2em;
@@ -438,7 +413,6 @@ li {
 }
 
 .block-wrapper3 div p {
-  font-family: "satoshi", sans-serif;
   font-size: 20px;
   font-weight: 200;
   margin-top: 2em;
@@ -469,11 +443,9 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: "satoshi", sans-serif;
 }
 
 #get-in-touch {
-  font-family: "satoshi", sans-serif;
   font-size: 15px;
 }
 
