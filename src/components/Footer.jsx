@@ -7,7 +7,7 @@ function Footer() {
     <footer className="bg-[#fefbf8] px-12">
       <div className="w-full flex flex-col justify-between mb-20">
         <div className='flex justify-between items-center my-20'>
-          <span>MEMBERSHIP</span>
+          <span className='text-red-600'>MEMBERSHIP</span>
           
           <p className="text-black text-7xl font-medium">
             Select the best plan

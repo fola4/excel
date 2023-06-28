@@ -9,7 +9,7 @@ function CardPlan({name, price, description}) {
 
         <div className="flex flex-col items-center">
           <div className="text-4xl font-medium">{price}</div>
-          <div className="uppercase text-[#818181] text-xs tracking-widest">per month</div>
+          <div className="uppercase text-red-600 text-xs tracking-widest">per month</div>
         </div>
       </div>
 
@@ -18,7 +18,7 @@ function CardPlan({name, price, description}) {
         <p className="text-center">{description}</p>
 
         <div>
-          <button className='btn3 hover:bg-white hover:text-black hover:font-extralight'>
+          <button className='btn3 border-red-600 text-red-500 hover:bg-red-600 hover:text-black hover:font-extralight hover:border-transparent'>
             Join
           </button>
         </div>
