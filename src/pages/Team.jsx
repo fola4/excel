@@ -1,3 +1,6 @@
+import React from "react";
+import Footer from "../components/Footer";
+
 function Team() {
   return (
   <div>
@@ -59,91 +62,7 @@ function Team() {
 
     
     {/* <!-- footer --> */}
-      <footer>
-      <div className="footer-wrapper">
-        <div id="white">
-          <span>MEMBERSHIP</span>
-          <p className="black-text">Select the best plan</p>
-        </div> 
-        <div className="card-footer">
-          <div className="card-plan">
-            <div className="top-block-card">
-              <div className="normal-text">Standard</div>
-              <div className="price-card">
-                <div className="price-text">£4/£8</div>
-                <div className="white-text">Month</div>
-              </div>
-            </div>
-            <div className="bottom-block-card">
-              <div className="white-text">Standard fees: Students £4, Adults £8. Enroll now to unlock your potential with us.</div>
-              <p className="button">
-              <a href="#" className="btn3">Join</a>
-              </p>
-            </div>
-          </div>
-          <div className="card-plan">
-            <div className="top-block-card">
-              <div className="normal-text">Family Session</div>
-              <div className="price-card">
-                <div className="price-text">£8</div>
-                <div className="white-text">Month</div>
-              </div>
-            </div>
-            <div className="bottom-block-card">
-              <div className="white-text">Unforgettable family sessions: Kids £8, Adults £8. Join us for quality bonding time and lasting memories..</div>
-              <p className="button">
-              <a href="#" className="btn3">Join</a>
-              </p>
-            </div>
-          </div>
-          <div className="card-plan">
-            <div className="top-block-card">
-              <div className="normal-text">Coached Session</div>
-              <div className="price-card">
-                <div className="price-text">£8/£15</div>
-                <div className="white-text">Month</div>
-              </div>
-            </div>
-            <div className="bottom-block-card">
-              <div className="white-text">Level up your game with expert-led coached sessions. Kids: £8, Adults: £15. Join us and reach new heights in badminton</div>
-              <p className="button">
-              <a href="#" className="btn3">Join</a>
-              </p>
-            </div>
-          </div>
-            </div>
-      </div>
-
-
-      {/* <!-- badminton --> */}
-      <div className="contact">
-        <div>
-          <span><a href="#" id="logo">Badminton Excel</a></span>
-        <p className="card-text">Embrace Diversity, Elevate Skills,<br /> Achieve Fitness!</p>
-        </div>
-          
-        <div>
-          <h4 className="text-[80px] mb-2 font-semibold">Let's play</h4>
-          <div className="button">
-            <a href="#" className="btn3">Register with us!</a>
-          </div>
-        </div>
-      </div>
-      <div className="social">
-      <ul>
-        <li><a href="#" className="social-icon">
-          <i className="fa-brands fa-instagram fa-beat mr-1" style={{color: '#818181'}}></i>
-          Instagram</a></li>
-        <li><a href="#" className="social-icon">
-          <i className="fa-brands fa-facebook fa-shake mr-1" style={{color: '#818181'}}></i>
-          Facebook</a></li>
-        <li><a href="#" className="social-icon">
-          <i className="fa-brands fa-twitter fa-bounce mr-1" style={{color: '#818181'}}></i>
-          Twitter</a></li>
-      </ul>
-      <p className="copyright">&copy;Badminton Excel. All Rights Reserved 2023. </p>
-      </div>
-    </footer>
+      <Footer />
     
   </div>
   );

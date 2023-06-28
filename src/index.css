@@ -196,26 +196,19 @@ h2 {
   margin-bottom: 1em;
 }
 
-.btn3 {
-  color: black;
-  text-align: center;
-  text-transform: capitalize;
-  background-color: rgba(0, 0, 0, 0);
-  border: 1px solid #000;
-  border-radius: 40px;
-  padding: 5px 2em;
-  font-weight: 100;
-  font-size: 20px;
-  transition: border-color 0.3s, color 0.3s, background-color 0.3s;
-  display: inline-block;
+@layer utilities {
+  .btn3 {
+    @apply border border-white capitalize bg-transparent rounded-[40px] py-[5px] px-12 font-thin text-xl transition inline-block text-white
+  }
 }
 
-.btn3:hover {
+
+/* .btn3:hover {
   color: #fff;
   background-color: #000;
   border: 1px solid #000;
   transition: border-color 0.3s, color 0.3s, background-color 0.3s;
-}
+} */
 
 #image {
   width: 50%;
@@ -238,12 +231,6 @@ h2 {
   color: #fff;
   font-size: 60px;
   font-weight: 500;
-}
-
-#white {
-  padding-top: 5em;
-  display: flex;
-  justify-content: space-between;
 }
 
 .imges {
@@ -284,27 +271,8 @@ hr {
 }
 
 /* footer */
-footer {
-  background-color: #fefbf8;
-  padding-inline: 3em;
-}
 
-.black-text {
-  color: #000;
-  font-size: 70px;
-  font-weight: 500;
-  margin-bottom: 0.7em;
-}
-
-.footer-wrapper {
-  width: 100%;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-bottom: 80px;
-  display: flex;
-}
-
-.card-footer {
+/* .card-footer {
   grid-template:
     ". ."
     "Area Area" / 1fr 1fr;
@@ -313,7 +281,7 @@ footer {
   grid-template-areas:
     ". ."
     "Area Area";
-}
+} */
 
 .card-footer {
   width: 100%;
@@ -323,41 +291,6 @@ footer {
   display: grid;
 }
 
-.card-plan {
-  grid-row-gap: 30px;
-  border: 1px solid #000;
-  flex-direction: column;
-  padding: 10px;
-  display: flex;
-  border-radius: 3px;
-}
-
-.top-block-card {
-  grid-column-gap: 16px;
-  grid-row-gap: 16px;
-  grid-template-rows: auto auto;
-  grid-template-columns: auto auto;
-  grid-auto-columns: 1fr;
-  justify-content: space-between;
-  display: flex;
-}
-
-.price-card {
-  flex-direction: column;
-  align-items: flex-start;
-  display: flex;
-}
-
-.bottom-block-card {
-  width: 100%;
-  grid-row-gap: 10px;
-  text-align: center;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: stretch;
-  display: flex;
-}
-
 .white-text {
   font-size: 15px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -365,11 +298,6 @@ footer {
   line-height: 1em;
   color: #818181;
   position: relative;
-}
-
-.normal-text {
-  font-weight: 500;
-  font-size: 15px;
 }
 
 .price-text {
