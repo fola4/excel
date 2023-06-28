@@ -14,7 +14,7 @@ function Footer() {
           </p>
         </div>
         
-        <div className="card-footer grid grid-cols-1 lg:grid-cols-3">
+        <div className="card-footer self-center grid grid-cols-1 lg:grid-cols-3">
           {cardPlans.map(plan => (
             <CardPlan
               name={plan.name}
