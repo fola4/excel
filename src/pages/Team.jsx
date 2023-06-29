@@ -1,6 +1,8 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import { craig } from "../assets/images"
+import { teamMembers } from "../constants";
+import TeamMember from "../components/TeamMember";
 
 function Team() {
   return (
@@ -19,37 +21,14 @@ function Team() {
       {/* <!-- This is the prototype of what you said, so we can go from here --> */}
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-2 gap-12 mt-12 px-12 my-5">
 
-        <div className="relative">
-          <p className="absolute text-white bottom-5 left-5 text-2xl ">Craig McKay</p>
-          <img src={craig} alt="team-member" />
-        </div>
+        {teamMembers.map((member, index) => (
+          <TeamMember
+            key={index}
+            name={member.name}
+            image={member.image}
+          />
+        ))}
         
-        <div className="relative">
-          <p className="absolute text-white bottom-5 left-5 text-2xl ">Craig McKay</p>
-          <img src={craig} alt="team-member" />
-        </div>
-        
-        <div className="relative">
-          <p className="absolute text-white bottom-5 left-5 text-2xl ">Craig McKay</p>
-          <img src={craig} alt="team-member" />
-        </div>
-        
-        <div className="relative">
-          <p className="absolute text-white bottom-5 left-5 text-2xl ">Craig McKay</p>
-          <img src={craig} alt="team-member" />
-        </div>
-        
-        <div className="relative">
-          <p className="absolute text-white bottom-5 left-5 text-2xl ">Craig McKay</p>
-          <img src={craig} alt="team-member" />
-        </div>
-        
-        <div className="relative">
-          <p className="absolute text-white bottom-5 left-5 text-2xl ">Craig McKay</p>
-          <img src={craig} alt="team-member" />
-        </div>
-
-
       </section>
     </div>
   );

@@ -1,8 +1,6 @@
 import React from 'react';
-import Footer from '../components/Footer';
 import { craig, video } from '../assets/images'
 import Navbar from '../components/Navbar';
-import { Link } from 'react-router-dom';
 
 function MainPage() {
   return (

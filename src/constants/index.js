@@ -1,4 +1,4 @@
-import { kidsPlaying, threeCourts } from '../assets/images'
+import { kidsPlaying, threeCourts, craig } from '../assets/images'
 
 export const cardPlans = [
   {
@@ -34,4 +34,31 @@ export const aboutDescs = [
     id: 3,
     description: "At Badminton Excel, we are not just a badminton club; we are a supportive community dedicated to fostering growth, wellness, and a love for the sport. Come and be a part of our story as we strive to excel together in the realm of badminton and beyond."
   }
+];
+
+export const teamMembers = [
+  {
+    name: "Craig McKay",
+    image: craig
+  },
+  {
+    name: "Craig McKay",
+    image: craig
+  },
+  {
+    name: "Craig McKay",
+    image: craig
+  },
+  {
+    name: "Craig McKay",
+    image: craig
+  },
+  {
+    name: "Craig McKay",
+    image: craig
+  },
+  {
+    name: "Craig McKay",
+    image: craig
+  },
 ];
