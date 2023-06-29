@@ -1,6 +1,5 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import { kidsPlaying, threeCourts } from '../assets/images';
 import { aboutDescs } from "../constants";
 import AboutSection from '../components/AboutSection';
 

@@ -32,7 +32,9 @@ function Footer() {
         <div>
           <a href="#" id="logo">
             <span>Badminton Excel</span>
-          <p className="card-text">Embrace Diversity, Elevate Skills,<br /> Achieve Fitness!</p></a>
+          <p className="card-text">
+            Embrace Diversity, Elevate Skills,<br /> Achieve Fitness <p className='text-red-600 inline'>!</p>
+          </p></a> 
         </div>
 
         <div>

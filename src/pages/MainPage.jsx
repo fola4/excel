@@ -1,6 +1,7 @@
 import React from 'react';
 import { craig, video } from '../assets/images'
 import Navbar from '../components/Navbar';
+import { Link } from 'react-router-dom';
 
 function MainPage() {
   return (
@@ -9,26 +10,24 @@ function MainPage() {
         <Navbar />
         
         {/* <!-- content --> */}
-        <div className="">
-          <div className="content">
-            <h1 className='text-[2em]'>
-              Being good at Badminton <br /> is everything.
-            </h1>
+        <div className="content">
+          <h1 className='text-[2em]'>
+            Being good at Badminton <br /> is everything.
+          </h1>
 
-            <div className="hero1">
-              <div>Study</div>
-              <div className="dot-block"></div>
-              <div>Practice</div>
-              <div className="dot-block"></div>
-              <div>Play</div>
-              <div className="dot-block"></div>
-              <div>Win</div>
-            </div>
-
-            <button className="button">
-              <a href="/membership" className="btn1">Join Us Now</a>
-            </button>
+          <div className="hero1">
+            <div>Study</div>
+            <div className="dot-block"></div>
+            <div>Practice</div>
+            <div className="dot-block"></div>
+            <div>Play</div>
+            <div className="dot-block"></div>
+            <div>Win</div>
           </div>
+
+          <button className="button">
+            <Link to="/membership" className="btn1">Join Us Now</Link>
+          </button>
         </div>
       </header>
 
@@ -40,9 +39,9 @@ function MainPage() {
           <p  id="text-content">
             We are a mixed bunch of friendly, social badminton fans based in the borough of Barnet, North London. Everyone is welcome to our club regardless of age, gender, capacity or abilities.
           </p>
-          <div className="button">
-              <a href="/membership#getInTouch" className="btn2">Get In Touch</a>
-            </div>
+          <button className="btn2">
+            <Link href="/membership" >Get In Touch</Link>
+          </button>
         </div>
         <div id="stats">
           <div data-aos="fade-left">
@@ -78,11 +77,11 @@ function MainPage() {
             Founded by diverse badminton fans in Barnet, London, We welcomes all abilities, providing coaching and family sessions.
           </h2>
           
-          <a href="/about">
+          <Link href="/about">
             <button className="btn3 border-black text-black hover:bg-black hover:text-white">
               About Us
             </button>
-          </a>
+          </Link>
         </div>
         <div id="image">
           <video src={video} autoPlay muted loop className="video"></video>
@@ -119,7 +118,9 @@ function MainPage() {
 
       {/* <!-- section 5 --> */}
       <article>
-        <h3>"When you play badminton, play with passion, play with heart, and leave everything on the court."</h3>
+        <h3>
+          "When you play badminton, play with passion, play with heart, and leave everything on the court."
+        </h3>
         <hr />
         <p id="quotes">- Gail Emms</p>
       </article>
