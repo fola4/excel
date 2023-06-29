@@ -1,6 +1,6 @@
 import React from "react";
-import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import { craig } from "../assets/images"
 
 function Team() {
   return (
@@ -21,32 +21,32 @@ function Team() {
 
         <div className="relative">
           <p className="absolute text-white bottom-5 left-5 text-2xl ">Craig McKay</p>
-          <img src="./src/assets/images/craig-mckay-jmURdhtm7Ng-unsplash.jpg" alt="team-member" />
+          <img src={craig} alt="team-member" />
         </div>
         
         <div className="relative">
           <p className="absolute text-white bottom-5 left-5 text-2xl ">Craig McKay</p>
-          <img src="./src/assets/images/craig-mckay-jmURdhtm7Ng-unsplash.jpg" alt="team-member" />
+          <img src={craig} alt="team-member" />
         </div>
         
         <div className="relative">
           <p className="absolute text-white bottom-5 left-5 text-2xl ">Craig McKay</p>
-          <img src="./src/assets/images/craig-mckay-jmURdhtm7Ng-unsplash.jpg" alt="team-member" />
+          <img src={craig} alt="team-member" />
         </div>
         
         <div className="relative">
           <p className="absolute text-white bottom-5 left-5 text-2xl ">Craig McKay</p>
-          <img src="./src/assets/images/craig-mckay-jmURdhtm7Ng-unsplash.jpg" alt="team-member" />
+          <img src={craig} alt="team-member" />
         </div>
         
         <div className="relative">
           <p className="absolute text-white bottom-5 left-5 text-2xl ">Craig McKay</p>
-          <img src="./src/assets/images/craig-mckay-jmURdhtm7Ng-unsplash.jpg" alt="team-member" />
+          <img src={craig} alt="team-member" />
         </div>
         
         <div className="relative">
           <p className="absolute text-white bottom-5 left-5 text-2xl ">Craig McKay</p>
-          <img src="./src/assets/images/craig-mckay-jmURdhtm7Ng-unsplash.jpg" alt="team-member" />
+          <img src={craig} alt="team-member" />
         </div>
 
 
