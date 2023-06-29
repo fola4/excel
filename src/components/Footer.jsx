@@ -26,7 +26,6 @@ function Footer() {
         </div>
       </div>
 
-
       {/* <!-- badminton --> */}
       <div className="contact">
         <div>
