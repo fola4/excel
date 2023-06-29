@@ -1,17 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;1,700&display=swap'); */
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
-body {
-  font-family: "satoshi", sans-serif;
-}
-
 header {
-  background-image: url(./images/stephan-rothe-VePgmkq3hHI-unsplash.jpg);
+  background-image: url(./assets/images/stephan-rothe-VePgmkq3hHI-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 1;
@@ -40,12 +38,22 @@ nav {
   font-size: 1.5em;
   margin-right: 2em;
   margin-bottom: 2px;
-
+  padding-bottom: 5px;
+  transition: border 0.2s ease;
+  border-bottom: 2px solid transparent;
 }
 
 .nav-link-title:hover {
-  padding-bottom: 3px;
-  border-bottom: 1px solid white;
+  border-color: rgb(255, 235, 235);
+}
+
+/* rgb(220 38 38) */
+.active {
+  border-color: rgb(220 38 38);
+}
+
+.nav-link-title.active:hover {
+  border-color: rgb(220 38 38);
 }
 
 .content {
@@ -53,27 +61,23 @@ nav {
   color: white;
   text-align: center;
   flex-direction: column;
-  /* align-items: center; */
-  font-family: "satoshi", sans-serif;
   display: flex;
   font-size: 45px;
-  /* font-weight: 100; */
   line-height: 1;
 }
 
-.content,
-h1 {
+.content, h1 {
   font-weight: 500;
 }
 
 .hero1 {
-  width: 100%;
-  justify-content: center;
-  align-items: center;
+  font-size: 0.5em;
   margin-top: 40px;
   margin-bottom: 50px;
+  width: 100%;
   display: flex;
-  font-size: 0.5em;
+  justify-content: center;
+  align-items: center;
 }
 
 .dot-block {
@@ -117,8 +121,7 @@ h1 {
   align-items: center;
 }
 
-.texts,
-h1 {
+.texts, h1 {
   padding-bottom: 40px;
 }
 
@@ -192,26 +195,19 @@ h2 {
   margin-bottom: 1em;
 }
 
-.btn3 {
-  color: black;
-  text-align: center;
-  text-transform: capitalize;
-  background-color: rgba(0, 0, 0, 0);
-  border: 1px solid #000;
-  border-radius: 40px;
-  padding: 5px 2em;
-  font-weight: 100;
-  font-size: 20px;
-  transition: border-color 0.3s, color 0.3s, background-color 0.3s;
-  display: inline-block;
+@layer utilities {
+  .btn3 {
+    @apply border capitalize rounded-[40px] py-[5px] px-12 text-xl inline-block transition font-medium
+  }
 }
 
-.btn3:hover {
+
+/* .btn3:hover {
   color: #fff;
   background-color: #000;
   border: 1px solid #000;
   transition: border-color 0.3s, color 0.3s, background-color 0.3s;
-}
+} */
 
 #image {
   width: 50%;
@@ -223,23 +219,17 @@ h2 {
 }
 
 /* section 4 */
-#black-background2 {
+.black-background2 {
   color: #818181;
   background-color: #000;
-  padding-inline: 5em;
-  padding-block: 3em;
+  /* padding-inline: 5em;
+  padding-block: 3em; */
 }
 
 .white-texts {
   color: #fff;
   font-size: 60px;
   font-weight: 500;
-}
-
-#white {
-  padding-top: 5em;
-  display: flex;
-  justify-content: space-between;
 }
 
 .imges {
@@ -280,78 +270,12 @@ hr {
 }
 
 /* footer */
-footer {
-  background-color: #fefbf8;
-  padding-inline: 3em;
-}
-
-.black-text {
-  color: #000;
-  font-size: 70px;
-  font-weight: 500;
-  margin-bottom: 0.7em;
-}
-
-.footer-wrapper {
-  width: 100%;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-bottom: 80px;
-  display: flex;
-}
-
-.card-footer {
-  grid-template:
-    ". ."
-    "Area Area" / 1fr 1fr;
-  grid-template-rows: auto auto;
-  grid-template-columns: auto auto auto;
-  grid-template-areas:
-    ". ."
-    "Area Area";
-}
-
 .card-footer {
   width: 100%;
   grid-column-gap: 30px;
   grid-row-gap: 30px;
   grid-auto-columns: 1fr;
   display: grid;
-}
-
-.card-plan {
-  grid-row-gap: 30px;
-  border: 1px solid #000;
-  flex-direction: column;
-  padding: 10px;
-  display: flex;
-  border-radius: 3px;
-}
-
-.top-block-card {
-  grid-column-gap: 16px;
-  grid-row-gap: 16px;
-  grid-template-rows: auto auto;
-  grid-template-columns: auto auto;
-  grid-auto-columns: 1fr;
-  justify-content: space-between;
-  display: flex;
-}
-
-.price-card {
-  flex-direction: column;
-  align-items: flex-start;
-  display: flex;
-}
-
-.bottom-block-card {
-  width: 100%;
-  grid-row-gap: 10px;
-  text-align: center;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: stretch;
-  display: flex;
 }
 
 .white-text {
@@ -361,11 +285,6 @@ footer {
   line-height: 1em;
   color: #818181;
   position: relative;
-}
-
-.normal-text {
-  font-weight: 500;
-  font-size: 15px;
 }
 
 .price-text {
@@ -417,13 +336,12 @@ li {
 }
 
 .copyright {
-  font-size: 15px;
   margin-block: 20px;
 }
 
 /* ABOUT US */
 #about-us {
-  background-image: url(./images/new\ shuttlecork.jpg);
+  background-image: url(./assets/images/newShuttlecork.jpg);
   background-repeat: no-repeat;
   background-size: fill;
   height: 100vh;
@@ -446,7 +364,6 @@ li {
 .block-wrapper {
   display: flex;
   justify-content: space-between;
-  margin: 10rem 2rem 2rem 2rem;
   /* padding: 6em; */
 }
 
@@ -463,7 +380,6 @@ li {
 }
 
 .block-wrapper div p {
-  font-family: "satoshi", sans-serif;
   font-size: 20px;
   font-weight: 200;
   margin-top: 5rem;
@@ -485,7 +401,6 @@ li {
 }
 
 .block-wrapper2 div p {
-  font-family: "satoshi", sans-serif;
   font-size: 20px;
   font-weight: 200;
   margin-top: 2em;
@@ -506,7 +421,6 @@ li {
 }
 
 .block-wrapper3 div p {
-  font-family: "satoshi", sans-serif;
   font-size: 20px;
   font-weight: 200;
   margin-top: 2em;
@@ -516,7 +430,7 @@ li {
 
 /* Membership */
 #membership {
-  background-image: url(images/saif71-com-DHj4B4d-Gaw-unsplash.jpg);
+  background-image: url(./assets/images/saif71-com-DHj4B4d-Gaw-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: fill;
   height: 100vh;
@@ -525,7 +439,7 @@ li {
 }
 
 #team {
-  background-image: url(./images/grass-sport-tennis-ball-design-lawn-green-color-generative-ai.jpg);
+  background-image: url(./assets/images/grass-sport-tennis-ball-design-lawn-green-color-generative-ai.jpg);
   background-repeat: no-repeat;
   background-size: fill;
   height: 100vh;
@@ -537,11 +451,9 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: "satoshi", sans-serif;
 }
 
 #get-in-touch {
-  font-family: "satoshi", sans-serif;
   font-size: 15px;
 }
 
