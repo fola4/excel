@@ -4,7 +4,7 @@ function CardPlan({name, price, description}) {
   return (
     <div className="max-w-xl flex flex-col gap-y-14 border border-black px-8 py-6 rounded-md bg-[hsl(0,0%,5%)] text-[hsl(0,0%,95%)]">
       {/* Card Top */}
-      <div className="flex justify-between items-center">
+      <div className="flex flex-col md:flex-row justify-between items-center">
         <div className="font-extralight text-3xl">{name}</div>
 
         <div className="flex flex-col items-center">

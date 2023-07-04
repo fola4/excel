@@ -8,6 +8,7 @@ function MainPage() {
     <div>
         {/* <!-- content --> */}
       <header id='main-page'>
+        <div className="absolute border border-yellow-600 top-0 left-0 h-full w-full opacity-75 bg-black" />
         <Navbar />
         
         <div className="content">
@@ -32,7 +33,7 @@ function MainPage() {
       </header>
 
       {/* <!-- section 2 --> */}
-      <section id="black-background">
+      <section id="black-background" className='border-2 border-green-600'>
         <div className="texts">
           <h1 id="head">LEADING #1 BADMINTON CENTRE</h1>
           <hr />

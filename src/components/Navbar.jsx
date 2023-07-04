@@ -8,9 +8,11 @@ function Navbar() {
 
   return (
     <nav className='relative z-30 flex items-center justify-between px-12 py-12'>
-      <span><a href="#">Badminton Excel</a></span>
+      <span>
+        <a href="#" className='text-white'>Badminton Excel</a>
+      </span>
 
-      <div className="nav-link space-x-12">
+      <div className="nav-link space-x-12 hidden">
         {links.map(link => (
           <NavbarLink name={link} />
         ))}
