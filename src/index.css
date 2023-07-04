@@ -12,36 +12,29 @@
 /* Membership */
 #membership {
   background-image: url(./assets/images/saif71-com-DHj4B4d-Gaw-unsplash.jpg);
-  background-repeat: no-repeat;
-  background-size: fill;
+  background-size: cover;
+  background-position: top;
   height: 100vh;
-  color: #fff;
 }
 
 #team {
   background-image: url(./assets/images/grass-sport-tennis-ball-design-lawn-green-color-generative-ai.jpg);
-  background-repeat: no-repeat;
-  background-size: fill;
+  background-size: cover;
+  background-position: top;
   height: 100vh;
-  color: #fff;
 }
 
 
 /* rgb(220 38 38) */
-.active {
+.active, .link.active:hover {
   border-color: rgb(220 38 38);
 }
-
-.link.active:hover {
-  border-color: rgb(220 38 38);
-}
-
 
 /* ABOUT US */
 #about-us {
   background-image: url(./assets/images/newShuttlecork.jpg);
-  background-repeat: no-repeat;
-  background-size: fill;
+  background-size: cover;
+  background-position: top;
   height: 100vh;
 }
 
@@ -52,11 +45,11 @@
   }
 }
 
-header {
+#main-page {
   background-image: url(./assets/images/stephan-rothe-VePgmkq3hHI-unsplash.jpg);
   background-size: cover;
   background-position: top;
-  height: 70vh;
+  height: 100vh;
 }
 
 

@@ -8,7 +8,6 @@ function MainPage() {
     <div>
         {/* <!-- content --> */}
       <header id='main-page'>
-        <div className="absolute border border-yellow-600 top-0 left-0 h-full w-full opacity-75 bg-black" />
         <Navbar />
         
         <div className="content">

@@ -12,7 +12,7 @@ function Team() {
         
         {/* <!-- content --> */}
         <div className="w-full absolute grid top-0 left-0 z-20 h-full place-items-center">
-          <h1 className="text-white text-[200px] ">Our Team</h1>
+          <h1 className="text-white text-2xl md:text-8xl">Our Team</h1>
         </div>
 
       </header>
