@@ -21,7 +21,7 @@ function Membership() {
               <a href="https://www.google.com/maps/search/?api=1&query=Barnet, North London" target="_blank"><i className="mr-2 fa-sharp fa-solid fa-location-dot" style={{"color": "#818181"}}></i>
                 Barnet, North London</a>
               <p><i className="mr-2 fa-sharp fa-solid fa-phone-volume" style={{"color": "#818181"}}></i>
-                +44 795 680 4395</p>
+                <a href="tel:+2347069637865">+2347069637865</a></p>
               <p><i className="mr-2 fa-sharp fa-solid fa-envelope" style={{"color": "#818181"}}></i>
                 information@office.com</p>
             </div>
