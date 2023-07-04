@@ -9,7 +9,7 @@ function CardPlan({name, price, description}) {
 
         <div className="flex flex-col items-center">
           <div className="text-4xl font-medium">{price}</div>
-          <div className="uppercase text-red-600 text-xs tracking-widest">per month</div>
+          <div className="uppercase text-red-600 text-xs tracking-widest">per session</div>
         </div>
       </div>
 
