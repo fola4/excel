@@ -12,7 +12,6 @@ header {
   background-image: url(./assets/images/stephan-rothe-VePgmkq3hHI-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 1;
 }
 
 a {
@@ -26,33 +25,12 @@ span {
   letter-spacing: 3px;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding-block: 3em;
-  margin-inline: 3em;
-}
-
-.nav-link-title {
-  font-weight: 300;
-  font-size: 1.5em;
-  margin-right: 2em;
-  margin-bottom: 2px;
-  padding-bottom: 5px;
-  transition: border 0.2s ease;
-  border-bottom: 2px solid transparent;
-}
-
-.nav-link-title:hover {
-  border-color: rgb(255, 235, 235);
-}
-
 /* rgb(220 38 38) */
 .active {
   border-color: rgb(220 38 38);
 }
 
-.nav-link-title.active:hover {
+.link.active:hover {
   border-color: rgb(220 38 38);
 }
 
@@ -165,6 +143,7 @@ nav {
 
 #stats {
   width: 45%;
+  border: 1px solid red;
   display: flex;
   justify-content: space-between;
 }
@@ -233,7 +212,7 @@ h2 {
 }
 
 .imges {
-  height: 50vh;
+  /* height: 50vh; */
   border-radius: 4px;
 }
 
@@ -345,7 +324,6 @@ li {
   background-repeat: no-repeat;
   background-size: fill;
   height: 100vh;
-  opacity: 5;
 }
 
 #subtle-text {
@@ -434,7 +412,6 @@ li {
   background-repeat: no-repeat;
   background-size: fill;
   height: 100vh;
-  opacity: 1;
   color: #fff;
 }
 
@@ -443,7 +420,6 @@ li {
   background-repeat: no-repeat;
   background-size: fill;
   height: 100vh;
-  opacity: 1;
   color: #fff;
 }
 

@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer className="bg-[#fefbf8] px-12">
       <div className="w-full flex flex-col justify-between mb-20">
-        <div className='flex justify-between items-center my-20'>
+        <div className='lg:flex justify-between items-center my-20'>
           <span className='text-red-600 text-5xl'>MEMBERSHIP</span>
           
           <p className="text-black text-7xl font-medium">
@@ -32,7 +32,7 @@ function Footer() {
           <a href="#" id="logo">
             <span>Badminton Excel</span>
           <p className="card-text">
-            Embrace Diversity, Elevate Skills,<br /> Achieve Fitness <p className='text-red-600 inline'>!</p>
+            Embrace <span className='text-[25px] text-red-600'>Diversity</span>, Elevate Skills,<br /> <span className='text-[25px] text-red-600'>Achieve</span> Fitness !
           </p></a> 
         </div>
 

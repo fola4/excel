@@ -1,16 +1,19 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import NavbarLink from './NavbarLink';
 
 function Navbar() {
+  const links = [
+    "Home", "Our Team", "Membership", "About Us"
+  ];
+
   return (
-    <nav className='relative z-30'>
+    <nav className='relative z-30 flex items-center justify-between px-12 py-12'>
       <span><a href="#">Badminton Excel</a></span>
 
-      <div className="nav-link">
-        <NavLink to="/" className="nav-link-title">Home</NavLink>
-        <NavLink to="/team" className="nav-link-title">Our team</NavLink>
-        <NavLink to="/membership" className="nav-link-title">Membership</NavLink>
-        <NavLink to="/about" className="nav-link-title">About Us</NavLink>
+      <div className="nav-link space-x-12">
+        {links.map(link => (
+          <NavbarLink name={link} />
+        ))}
       </div>
     </nav>
   );

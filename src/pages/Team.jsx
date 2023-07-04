@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import { craig } from "../assets/images"
 import { teamMembers } from "../constants";
 import TeamMember from "../components/TeamMember";
 
