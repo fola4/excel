@@ -8,6 +8,9 @@
   scroll-behavior: smooth;
 }
 
+header {
+  @apply px-8 pt-28;
+}
 
 /* Membership */
 #membership {
@@ -24,9 +27,9 @@
   height: 100vh;
 }
 
-
 /* rgb(220 38 38) */
-.active, .link.active:hover {
+.active,
+.link.active:hover {
   border-color: rgb(220 38 38);
 }
 
@@ -38,10 +41,9 @@
   height: 100vh;
 }
 
-
 @layer utilities {
   .btn3 {
-    @apply border capitalize rounded-[40px] py-[5px] px-12 text-xl inline-block transition font-medium
+    @apply inline-block rounded-[40px] border px-12 py-[5px] text-xl font-medium capitalize transition;
   }
 }
 
@@ -52,5 +54,8 @@
   height: 100vh;
 }
 
+.dot-block {
+  @apply h-1 w-1 rounded-full bg-white md:h-2 md:w-2;
+}
 
 /* *****END****** */

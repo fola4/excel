@@ -1,46 +1,50 @@
-import React from 'react';
-import { craig, video } from '../assets/images'
-import Navbar from '../components/Navbar';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { craig, video } from "../assets/images";
+import { Link } from "react-router-dom";
 
 function MainPage() {
   return (
     <div>
-        {/* <!-- content --> */}
-      <header id='main-page'>
-        <Navbar />
-        
-        <div className="content">
-          <h1 className='text-[2em]'>
-            Being good at Badminton <br /> is everything.
-          </h1>
+      <header id="main-page">
+        {/* hero content */}
+        <div className="grid h-full">
+          <div className="flex flex-col gap-y-8 self-center">
+            <h1 className="text-center text-3xl font-bold tracking-widest text-white sm:text-5xl md:text-8xl lg:text-9xl">
+              Being good at Badminton{" "}
+              <span className="whitespace-nowrap">is everything.</span>
+            </h1>
 
-          <div className="hero1">
-            <div>Study</div>
-            <div className="dot-block"></div>
-            <div>Practice</div>
-            <div className="dot-block"></div>
-            <div>Play</div>
-            <div className="dot-block"></div>
-            <div>Win</div>
+            <div className="flex items-center gap-x-2 self-center text-white md:text-2xl lg:gap-x-5 lg:text-3xl">
+              <div>Study</div>
+              <div className="dot-block"></div>
+              <div>Practice</div>
+              <div className="dot-block"></div>
+              <div>Play</div>
+              <div className="dot-block"></div>
+              <div>Win</div>
+            </div>
+
+            <button className="self-center justify-self-end rounded-md border border-white px-4 py-3 font-bold text-white transition hover:border-transparent hover:bg-black lg:px-8 lg:py-4 lg:text-3xl">
+              <Link to="/membership" className="btn1">
+                Join Us Now
+              </Link>
+            </button>
           </div>
-
-          <button className="button">
-            <Link to="/membership" className="btn1">Join Us Now</Link>
-          </button>
         </div>
       </header>
 
       {/* <!-- section 2 --> */}
-      <section id="black-background" className='border-2 border-green-600'>
+      <section id="black-background" className="border-2 border-green-600">
         <div className="texts">
           <h1 id="head">LEADING #1 BADMINTON CENTRE</h1>
           <hr />
-          <p  id="text-content">
-            We are a mixed bunch of friendly, social badminton fans based in the borough of Barnet, North London. Everyone is welcome to our club regardless of age, gender, capacity or abilities.
+          <p id="text-content">
+            We are a mixed bunch of friendly, social badminton fans based in the
+            borough of Barnet, North London. Everyone is welcome to our club
+            regardless of age, gender, capacity or abilities.
           </p>
-          <Link to='/membership'>
-            <button className='btn2'>get in touch</button>
+          <Link to="/membership">
+            <button className="btn2">get in touch</button>
           </Link>
         </div>
         <div id="stats">
@@ -64,7 +68,6 @@ function MainPage() {
               <p id="sub-text">Professional Trainers</p>
             </div>
           </div>
-        
         </div>
       </section>
 
@@ -73,10 +76,11 @@ function MainPage() {
         <div>
           <span>OUR STORY</span>
 
-          <h2 className='font-bold'>
-            Founded by diverse badminton fans in Barnet, London, We welcomes all abilities, providing coaching and family sessions.
+          <h2 className="font-bold">
+            Founded by diverse badminton fans in Barnet, London, We welcomes all
+            abilities, providing coaching and family sessions.
           </h2>
-          
+
           <Link to="/about us">
             <button className="btn3 border-black text-black hover:bg-black hover:text-white">
               About Us
@@ -84,19 +88,22 @@ function MainPage() {
           </Link>
         </div>
         <div id="image">
-          <video src={video} autoPlay muted loop className="video"></video>
+          <video src={video} autoPlay muted loop className="video" />
         </div>
-
       </section>
 
       {/* <!-- section 4 --> */}
-      <section className='black-background2 py-10 px-20'>
-        <div id="white" className='flex justify-between py-20'>
+      <section className="black-background2 px-20 py-10">
+        <div id="white" className="flex justify-between py-20">
           <span>OUR TEAM</span>
-          <p className="white-texts">Grow your skill with<br />our team</p>
+          <p className="white-texts">
+            Grow your skill with
+            <br />
+            our team
+          </p>
         </div>
 
-        <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-y-12 gap-x-12'>
+        <div className="grid gap-x-12 gap-y-12 md:grid-cols-2 lg:grid-cols-4">
           <div>
             <img src={craig} alt="" className="imges" />
             <p className="image-text">Anderson Mike</p>
@@ -119,12 +126,12 @@ function MainPage() {
       {/* <!-- section 5 --> */}
       <article>
         <h3>
-          "When you play badminton, play with passion, play with heart, and leave everything on the court."
+          "When you play badminton, play with passion, play with heart, and
+          leave everything on the court."
         </h3>
         <hr />
         <p id="quotes">- Gail Emms</p>
       </article>
-            
     </div>
   );
 }
