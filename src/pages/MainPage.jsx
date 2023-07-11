@@ -34,73 +34,84 @@ function MainPage() {
       </header>
 
       {/* <!-- section 2 --> */}
-      <section id="black-background" className="border-2 border-green-600">
-        <div className="texts">
-          <h1 id="head">LEADING #1 BADMINTON CENTRE</h1>
+      <section className="grid grid-cols-1 grid-rows-2 gap-y-8 bg-black px-8 py-10 lg:grid-cols-2 lg:grid-rows-1 lg:gap-x-8 lg:py-12 xl:grid-cols-[45%_1fr_45%]">
+        <div className="flex flex-col gap-y-8 text-[#818181] xl:gap-y-12">
+          <h1 className="text-center font-medium tracking-widest lg:text-left lg:text-xl">
+            LEADING #1 BADMINTON CENTRE
+          </h1>
+
           <hr />
-          <p id="text-content">
+
+          <p className="text-center font-light lg:text-left lg:text-xl">
             We are a mixed bunch of friendly, social badminton fans based in the
             borough of Barnet, North London. Everyone is welcome to our club
             regardless of age, gender, capacity or abilities.
           </p>
-          <Link to="/membership">
-            <button className="btn2">get in touch</button>
+
+          <Link to="/membership" className="self-center lg:self-start">
+            <button className="rounded-[40px] border border-white px-8 py-1 capitalize text-white hover:bg-white hover:text-black">
+              get in touch
+            </button>
           </Link>
         </div>
-        <div id="stats">
-          <div data-aos="fade-left">
-            <div>
-              <span className="num">5+</span>
-              <p id="sub-text">Professional Trainers</p>
-            </div>
-            <div>
-              <span className="num">10K+</span>
-              <p id="sub-text">Professional Trainers</p>
-            </div>
+
+        <div className="max-width grid grid-cols-2 grid-rows-2 gap-8 text-white xl:col-start-3">
+          <div className="flex flex-col justify-between">
+            <span className="h-full text-8xl lg:text-7xl xl:text-9xl">5+</span>
+            <p id="sub-text">Professional Trainers</p>
           </div>
-          <div>
-            <div>
-              <span className="num">10</span>
-              <p id="sub-text">Professional Trainers</p>
-            </div>
-            <div>
-              <span className="num">13k+</span>
-              <p id="sub-text">Professional Trainers</p>
-            </div>
+          <div className="flex flex-col justify-between">
+            <span className="h-full text-8xl lg:text-7xl xl:text-9xl">
+              10K+
+            </span>
+            <p id="sub-text">Professional Trainers</p>
+          </div>
+          <div className="flex flex-col justify-between">
+            <span className="h-full text-8xl lg:text-7xl xl:text-9xl">10+</span>
+            <p id="sub-text">Professional Trainers</p>
+          </div>
+          <div className="flex flex-col justify-between">
+            <span className="h-full text-8xl lg:text-7xl xl:text-9xl">
+              13k+
+            </span>
+            <p id="sub-text">Professional Trainers</p>
           </div>
         </div>
       </section>
 
       {/* <!-- section 3 --> */}
-      <section id="white-background">
-        <div>
-          <span>OUR STORY</span>
+      <section className="grid grid-rows-2 md:grid-cols-2 md:grid-rows-1">
+        <div className="grid min-h-full place-items-center md:ml-8">
+          <div className="my-2 flex flex-col gap-y-8 text-center md:text-left">
+            <span className="font-thin tracking-widest md:text-3xl">
+              OUR STORY
+            </span>
 
-          <h2 className="font-bold">
-            Founded by diverse badminton fans in Barnet, London, We welcomes all
-            abilities, providing coaching and family sessions.
-          </h2>
+            <h2 className="font-bold lg:text-3xl lg:tracking-widest">
+              Founded by diverse badminton fans in Barnet, London, We welcomes
+              all abilities, providing coaching and family sessions.
+            </h2>
 
-          <Link to="/about us">
-            <button className="btn3 border-black text-black hover:bg-black hover:text-white">
-              About Us
-            </button>
-          </Link>
+            <Link to="/about us">
+              <button className="btn3 border-black text-black hover:bg-black hover:text-white">
+                About Us
+              </button>
+            </Link>
+          </div>
         </div>
-        <div id="image">
+
+        <div>
           <video src={video} autoPlay muted loop className="video" />
         </div>
       </section>
 
       {/* <!-- section 4 --> */}
-      <section className="black-background2 px-20 py-10">
-        <div id="white" className="flex justify-between py-20">
-          <span>OUR TEAM</span>
-          <p className="white-texts">
-            Grow your skill with
-            <br />
-            our team
-          </p>
+      <section className="bg-black px-20 py-10">
+        <div className="flex flex-col items-center py-20 text-white">
+          <span className="whitespace-nowrap text-4xl font-extralight tracking-widest">
+            OUR TEAM
+          </span>
+          <p className="whitespace-nowrap">Grow your skill with our team</p>
         </div>
 
         <div className="grid gap-x-12 gap-y-12 md:grid-cols-2 lg:grid-cols-4">
@@ -124,13 +135,13 @@ function MainPage() {
       </section>
 
       {/* <!-- section 5 --> */}
-      <article>
-        <h3>
+      <article className="mx-2">
+        <h3 className="text-center text-4xl font-light">
           "When you play badminton, play with passion, play with heart, and
           leave everything on the court."
         </h3>
         <hr />
-        <p id="quotes">- Gail Emms</p>
+        <p className="text-right">- Gail Emms</p>
       </article>
     </div>
   );
