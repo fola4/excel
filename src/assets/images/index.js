@@ -10,6 +10,8 @@ import corkNet from './stephan-rothe-VePgmkq3hHI-unsplash.jpg'
 import twoRackets from './xuanming-U5epRU6sY_A-unsplash (1).jpg'
 import video from './pexels-林林-5991157-1920x1080-50fps.mp4'
 import concept from './badminton-concept-with-shuttlecock-racket (1).jpg'
+import menu from './icon-menu.svg'
+import close from './icon-close-menu.svg'
 
 export {
   oldRacketCork,
@@ -23,5 +25,7 @@ export {
   corkNet,
   twoRackets,
   video,
-  concept
+  concept,
+  menu,
+  close
 };

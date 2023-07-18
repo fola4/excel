@@ -1,20 +1,44 @@
-import React from 'react';
-import NavbarLink from './NavbarLink';
+import React, { useState } from "react";
+import NavbarLink from "./NavbarLink";
+import { Link } from "react-router-dom";
+import { close, menu } from "../assets/images";
+import MobileLinks from "./MobileLinks";
 
 function Navbar() {
-  const links = [
-    "Home", "Our Team", "Membership", "About Us"
-  ];
+  const links = ["Home", "Our Team", "Membership", "About Us"];
+
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className='relative z-30 flex items-center justify-between px-12 py-12'>
-      <span><a href="#">Badminton Excel</a></span>
+    <nav className="fixed z-30 flex w-full items-center justify-between bg-black px-8 py-8">
+      <Link to="/" className="text-white">
+        BadmintonExcel
+      </Link>
 
-      <div className="nav-link space-x-12">
-        {links.map(link => (
-          <NavbarLink name={link} />
+      <div
+        className={`fixed left-0 top-0 z-[35] h-screen w-full bg-black  opacity-[.6] ${
+          menuOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+        onClick={() => setMenuOpen((prev) => !prev)}
+      />
+
+      {/* Desktop Links */}
+      <div className="hidden space-x-12 md:block">
+        {links.map((link) => (
+          <NavbarLink name={link} key={link} />
         ))}
       </div>
+
+      {/* Hamburger button */}
+      <button
+        className="z-50 flex h-10 w-10 items-center justify-center bg-white md:hidden"
+        onClick={() => setMenuOpen((prev) => !prev)}
+      >
+        <img src={!menuOpen ? menu : close} alt="menu-icon" />
+      </button>
+
+      {/* Mobile Links */}
+      <MobileLinks menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
     </nav>
   );
 }

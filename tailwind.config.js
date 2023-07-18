@@ -4,10 +4,12 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        "satoshi": ["'satoshi'", 'sans-serif']
-      }
+        satoshi: ["'satoshi'", "sans-serif"],
+      },
+      colors: {
+        black: "#030303",
+      },
     },
   },
   plugins: [],
-}
-
+};
