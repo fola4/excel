@@ -1,6 +1,7 @@
 import React from "react";
-import { cardPlans } from "../constants";
+import { cardPlans, socialIcons } from "../constants";
 import CardPlan from "./CardPlan";
+import SocialIcon from "./SocialIcon";
 
 function Footer() {
   return (
@@ -53,40 +54,22 @@ function Footer() {
         </div>
       </div>
 
-      <div className="social">
-        <ul>
-          <li>
-            <a href="#" className="social-icon">
-              <i
-                className="fa-brands fa-instagram fa-beat mr-2"
-                style={{ color: "rgb(220 38 38)" }}
-              ></i>
-              Instagram
-            </a>
-          </li>
-          <li>
-            <a href="#" className="social-icon">
-              <i
-                className="fa-brands fa-facebook fa-shake mr-2"
-                style={{ color: "#1877F2" }}
-              ></i>
-              Facebook
-            </a>
-          </li>
-          <li>
-            <a href="#" className="social-icon">
-              <i
-                className="fa-brands fa-twitter fa-bounce mr-2"
-                style={{ color: "#1DA1F2" }}
-              ></i>
-              Twitter
-            </a>
-          </li>
+      <div>
+        <ul className="my-8 flex justify-between">
+          {socialIcons.map((icon) => (
+            <SocialIcon
+              animation={icon.animation}
+              color={icon.color}
+              name={icon.name}
+              key={icon.name}
+            />
+          ))}
         </ul>
-        <p className="copyright text-sm uppercase tracking-widest">
-          &copy;Badminton Excel. All Rights Reserved 2023.{" "}
-        </p>
       </div>
+
+      <p className="my-8 text-center text-sm uppercase tracking-widest">
+        &copy;Badminton Excel. All Rights Reserved 2023.
+      </p>
     </footer>
   );
 }

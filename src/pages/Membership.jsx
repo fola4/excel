@@ -7,7 +7,7 @@ function Membership() {
         <div className=" order absolute left-0 top-0 h-full w-full bg-black opacity-75"></div>
 
         {/* <!-- content --> */}
-        <div className="relative z-20 grid grid-cols-1 gap-x-5 px-8 lg:grid-cols-2">
+        <div className="relative z-20 grid grid-cols-1 gap-x-5 px-8 pb-3 lg:grid-cols-2">
           <div className="order-2 flex flex-col self-center text-center text-white md:block lg:text-left">
             <h2 id="getInTouch" className="mb-0 pt-2 text-7xl">
               Get In Touch
