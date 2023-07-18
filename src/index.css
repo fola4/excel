@@ -17,7 +17,7 @@ header {
   background-image: url(./assets/images/saif71-com-DHj4B4d-Gaw-unsplash.jpg);
   background-size: cover;
   background-position: top;
-  height: 100vh;
+  @apply px-0 lg:h-screen;
 }
 
 #team {
