@@ -13,10 +13,7 @@ function Membership() {
               Get In Touch
             </h2>
             <p className="border-b border-gray-400 py-10 text-2xl font-thin">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Architecto tenetur similique nostrum corrupti officia aliquid
-              excepturi assumenda dolorum tempore culpa? Quaerat dolor error
-              harum enim libero adipisci mollitia, perferendis placeat.
+            Ready to experience the excitement of badminton?<br></br>Let us help you become even greater at what you do . Get in touch now and unleash your potential on the court!
             </p>
 
             <div className="mt-5 flex flex-col gap-y-5 text-2xl">
