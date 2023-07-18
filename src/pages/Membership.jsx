@@ -1,15 +1,14 @@
 import React from "react";
-import Navbar from "../components/Navbar";
 
 function Membership() {
   return (
     <div>
       <header id="membership" className="relative">
-        <div className="absolute left-0 top-0 h-full w-full bg-black opacity-75"></div>
+        <div className=" order absolute left-0 top-0 h-full w-full bg-black opacity-75"></div>
 
         {/* <!-- content --> */}
-        <div className="relative z-20 grid grid-cols-2 gap-x-5 px-8">
-          <div className="self-center">
+        <div className="relative z-20 grid grid-cols-1 gap-x-5 px-8 lg:grid-cols-2">
+          <div className="order-2 flex flex-col self-center text-center text-white md:block lg:text-left">
             <h2 id="getInTouch" className="mb-0 pt-2 text-7xl">
               Get In Touch
             </h2>
@@ -48,7 +47,7 @@ function Membership() {
             </div>
           </div>
 
-          <form className="rounded-xl bg-[hsla(0,0%,99%,.1)] px-8 pb-10 pt-5">
+          <form className="order-1 rounded-xl bg-[hsla(0,0%,99%,.1)] px-8 pb-10 pt-5 lg:order-3">
             <p className="my-10 text-center text-5xl font-medium text-[hsla(0,0%,95%)]">
               Join Our Team
             </p>

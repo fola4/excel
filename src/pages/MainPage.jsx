@@ -135,7 +135,7 @@ function MainPage() {
       </section>
 
       {/* <!-- section 5 --> */}
-      <article className="mx-2">
+      <article className="mx-2 my-8">
         <h3 className="text-center text-4xl font-light">
           "When you play badminton, play with passion, play with heart, and
           leave everything on the court."
