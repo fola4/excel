@@ -30,22 +30,19 @@ function Footer() {
       {/* <!-- badminton --> */}
       <div className="contact">
         <div>
-          <a href="#" id="logo">
-            <span>Badminton Excel</span>
-            <p className="card-text">
-              Embrace{" "}
-              <span className="text-[25px] text-red-600">Diversity</span>,
-              Elevate Skills,
-              <br /> <span className="text-[25px] text-red-600">
-                Achieve
-              </span>{" "}
-              Fitness !
+          <a href="#" id="logo" className="font-light">
+            <span>BadmintonExcel</span>
+            <p className="text-2xl">
+              Embrace <span className="text-red-600">Diversity</span>, Elevate
+              Skills, <span className="text-red-600">Achieve</span> Fitness !
             </p>
           </a>
         </div>
 
         <div>
-          <h4 className="mb-2 text-[80px] font-semibold">Let's play</h4>
+          <h4 className="mb-3 text-[80px] font-semibold leading-tight">
+            Let's play
+          </h4>
           <a href="/membership">
             <button className="btn3 border-black px-2 py-3 text-black hover:bg-black hover:text-white">
               Register with us !
@@ -68,7 +65,7 @@ function Footer() {
       </div>
 
       <p className="my-8 text-center text-sm uppercase tracking-widest">
-        &copy;Badminton Excel. All Rights Reserved 2023.
+        &copy;BadmintonExcel. All Rights Reserved 2023.
       </p>
     </footer>
   );
