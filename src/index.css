@@ -8,6 +8,22 @@
   scroll-behavior: smooth;
 }
 
+/* Regular Font */
+@font-face {
+  font-display: swap;
+  font-family: "Satoshi";
+  font-style: normal;
+  src: url(./assets/fonts/Satoshi-Variable.ttf);
+}
+
+/* Italic font */
+@font-face {
+  font-display: swap;
+  font-family: "Satoshi";
+  font-style: italic;
+  src: url(./assets/fonts/Satoshi-VariableItalic.ttf);
+}
+
 header {
   @apply px-8 pt-28;
 }

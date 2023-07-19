@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        satoshi: ["'satoshi'", "sans-serif"],
+        satoshi: ["'Satoshi'", "sans-serif"],
       },
       colors: {
         black: "#030303",
