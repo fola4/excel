@@ -33,7 +33,7 @@ header {
   background-image: url(./assets/images/saif71-com-DHj4B4d-Gaw-unsplash.jpg);
   background-size: cover;
   background-position: top;
-  @apply px-0 lg:h-screen;
+  @apply px-0;
 }
 
 #team {
@@ -55,12 +55,6 @@ header {
   background-size: cover;
   background-position: top;
   height: 100vh;
-}
-
-@layer utilities {
-  .btn3 {
-    @apply inline-block rounded-[40px] border px-12 py-[5px] text-xl font-medium capitalize transition;
-  }
 }
 
 #main-page {

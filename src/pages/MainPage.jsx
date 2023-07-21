@@ -137,8 +137,11 @@ function MainPage() {
       </section>
 
       {/* <!-- section 5 --> */}
-      <article className="mx-2 my-8">
-        <h3 className="text-center text-4xl font-light">
+      <article className="relative px-2 py-8">
+        <i className="fa-solid fa-quote-left absolute left-0 top-0 text-9xl opacity-10 md:text-[10rem] lg:text-[15rem]" />
+        <i className="fa-solid fa-quote-right absolute bottom-0 right-0 text-9xl opacity-10 md:text-[10rem] lg:text-[15rem]"></i>
+
+        <h3 className="text-center text-5xl font-light md:text-6xl lg:text-8xl">
           "When you play badminton, play with passion, play with heart, and
           leave everything on the court."
         </h3>

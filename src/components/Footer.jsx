@@ -6,12 +6,12 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer className="bg-[#fefbf8] px-12">
+    <footer className="mt-3 bg-gray-900 px-12 text-white">
       <div className="mb-20 flex w-full flex-col justify-between">
         <div className="my-20 items-center justify-between text-center lg:flex">
           <span className="text-2xl text-red-600 md:text-5xl">MEMBERSHIP</span>
 
-          <p className="text-2xl font-medium text-black md:text-7xl">
+          <p className="text-2xl font-medium text-gray-200 md:text-7xl">
             Select the best plan
           </p>
         </div>
@@ -65,7 +65,7 @@ function Footer() {
         </ul>
       </div>
 
-      <p className="my-8 text-center text-sm uppercase tracking-widest">
+      <p className="py-8 text-center text-xs uppercase tracking-widest">
         &copy;BadmintonExcel. All Rights Reserved 2023.
       </p>
     </footer>
