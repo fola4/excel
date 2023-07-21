@@ -9,7 +9,7 @@ function SocialIcon({ color, name, animation }) {
           style={{ color: `${color}` }}
         ></i>
 
-        <p className="hidden lg:block">{name}</p>
+        <p className="hidden lg:block uppercase text-sm tracking-widest ">{name}</p>
       </a>
     </li>
   );

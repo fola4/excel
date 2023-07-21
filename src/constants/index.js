@@ -3,7 +3,7 @@ import { kidsPlaying, threeCourts, craig } from "../assets/images";
 export const cardPlans = [
   {
     name: "Standard",
-    price: "£4/£8",
+    price: "£4 | £8",
     description:
       "Standard fees. Students £4, Adults £8. Enroll now to unlock your potential with us.",
   },
@@ -15,7 +15,7 @@ export const cardPlans = [
   },
   {
     name: "Coached Session",
-    price: "£8/£15",
+    price: "£8 | £15",
     description:
       "Level up your game with expert-led coached sessions. Kids: £8, Adults: £15. Join us and reach new heights in badminton.",
   },
@@ -48,23 +48,23 @@ export const teamMembers = [
     image: craig,
   },
   {
-    name: "Craig McKay",
+    name: "Mable Cross",
     image: craig,
   },
   {
-    name: "Craig McKay",
+    name: "Chad Phelps",
     image: craig,
   },
   {
-    name: "Craig McKay",
+    name: "Jimmy Vargas",
     image: craig,
   },
   {
-    name: "Craig McKay",
+    name: "Gordon Santos",
     image: craig,
   },
   {
-    name: "Craig McKay",
+    name: "Vera Jones",
     image: craig,
   },
 ];
@@ -85,4 +85,13 @@ export const socialIcons = [
     color: "#1da1f2",
     animation: "fa-bounce",
   },
+];
+
+export const features = [
+  "Headquartered In USA, With offices in India and Norway",
+  "Automation Based Development",
+  "350+ Projects Delivered",
+  "30 Million funding acquired by clients",
+  "Custom Solution for start-up to enterprise",
+  "Robust Scalable Software",
 ];

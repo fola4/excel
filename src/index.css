@@ -25,7 +25,7 @@
 }
 
 header {
-  @apply px-8 pt-28;
+  @apply relative px-8 pt-28;
 }
 
 /* Membership */

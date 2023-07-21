@@ -24,7 +24,7 @@ function MainPage() {
               <div>Win</div>
             </div>
 
-            <button className="self-center justify-self-end rounded-md border border-white px-4 py-3 font-bold text-white transition hover:border-transparent hover:bg-black lg:px-8 lg:py-4 lg:text-3xl">
+            <button className="self-center justify-self-end rounded-[6rem] border border-white px-4 py-3 font-bold text-white transition hover:border-transparent hover:bg-black lg:px-8 lg:py-4 lg:text-3xl">
               <Link to="/membership" className="btn1">
                 Join Us Now
               </Link>
@@ -107,11 +107,13 @@ function MainPage() {
 
       {/* <!-- section 4 --> */}
       <section className="bg-black px-20 py-10">
-        <div className="flex flex-col items-center py-20 text-white">
+        <div className="flex flex-col items-center py-20 text-white md:flex-row md:justify-between">
           <span className="whitespace-nowrap text-4xl font-extralight tracking-widest">
             OUR TEAM
           </span>
-          <p className="whitespace-nowrap">Grow your skill with our team</p>
+          <p className="whitespace-nowrap md:text-2xl lg:text-4xl">
+            Grow your skill with our team
+          </p>
         </div>
 
         <div className="grid gap-x-12 gap-y-12 md:grid-cols-2 lg:grid-cols-4">

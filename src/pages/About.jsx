@@ -1,36 +1,36 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import { aboutDescs } from "../constants";
-import AboutSection from "../components/AboutSection";
+import { features } from "../constants";
+import Feature from "../components/Feature";
 
 export default function About() {
   return (
     <div>
       <header id="about-us">
+        <div className=" absolute left-0 top-0 h-full w-full bg-black opacity-75"></div>
+
         {/* <!-- content --> */}
-        <div className="home-banner-content">
-          <div className="content">
-            <span id="subtle-text">About us</span>
-            <h1 id="large-text">Who We Are</h1>
-          </div>
+        <div className="relative z-20 capitalize text-white">
+          <h1>We don't strive</h1>
+          <h1>We Deliver Client's success</h1>
+
+          <p>
+            Halkwinds specializes in delivering real time business solution for
+            your custom software development needs.
+          </p>
         </div>
       </header>
 
-      {/* <!-- section 6 --> */}
-      <div className="px-8 py-20">
-        <p className="text-center text-4xl font-thin">ABOUT</p>
+      <section className="px-12">
+        <h2>
+          Halkwinds don't just strive for client's success but delivers it.
+        </h2>
 
-        <div className="grid grid-cols-1 gap-y-32">
-          {aboutDescs.map((desc) => (
-            <AboutSection
-              key={desc.id}
-              description={desc.description}
-              image={desc.image}
-              id={desc.id}
-            />
+        <div className="mx-auto grid auto-rows-fr gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {features.map((feature, index) => (
+            <Feature index={index + 1} key={index} description={feature} />
           ))}
         </div>
-      </div>
+      </section>
     </div>
   );
 }
