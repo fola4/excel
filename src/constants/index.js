@@ -88,10 +88,43 @@ export const socialIcons = [
 ];
 
 export const features = [
-  "Headquartered In USA, With offices in India and Norway",
-  "Automation Based Development",
-  "350+ Projects Delivered",
-  "30 Million funding acquired by clients",
-  "Custom Solution for start-up to enterprise",
-  "Robust Scalable Software",
+  "Impressive Track Record",
+  "Strong Community Presence",
+  "Welcoming Environment",
+  "Professional Coaching",
+  "Family-Centric Focus",
+  "State-of-the-Art Facilities",
+];
+
+export const pricing = [
+  {
+    name: "Standard",
+    desc: "Casual individual badminton with court access during regular hours.",
+    price: 15,
+    features: [
+      "Court access during regular hours.",
+      "Family-friendly for all skill levels.",
+      "Bring your own or rent equipment.",
+    ],
+  },
+  {
+    name: "Family Plan",
+    desc: "Exclusive family badminton, with complimentary racket rentals.",
+    price: 30,
+    features: [
+      "Exclusive and unlimited parents and kids court access.",
+      "Flexible playing hours.",
+      "Complimentary racket rentals.",
+    ],
+  },
+  {
+    name: "Coached Session",
+    desc: "Personalized training from a pro coach for improved skills and family bonding.",
+    price: 45,
+    features: [
+      "Personalized training with coach.",
+      "Focus on techniques and tactics.",
+      "Strengthen family bonds.",
+    ],
+  },
 ];

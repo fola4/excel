@@ -1,28 +1,31 @@
 import React from "react";
-import { cardPlans, socialIcons } from "../constants";
+import { cardPlans, features, pricing, socialIcons } from "../constants";
 import CardPlan from "./CardPlan";
 import SocialIcon from "./SocialIcon";
 import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer className="mt-3 bg-gray-900 px-12 text-white">
+    <footer className="bg-black px-12 text-white">
       <div className="mb-20 flex w-full flex-col justify-between">
         <div className="my-20 items-center justify-between text-center lg:flex">
-          <span className="text-2xl text-red-600 md:text-5xl">MEMBERSHIP</span>
+          <span className="text-2xl font-thin text-red-600 md:text-5xl">
+            MEMBERSHIP
+          </span>
 
-          <p className="text-2xl font-medium text-gray-200 md:text-7xl">
+          <p className="text-2xl font-medium text-gray-200 md:text-6xl">
             Select the best plan
           </p>
         </div>
 
         <div className="grid grid-cols-1 gap-8 self-center lg:grid-cols-3">
-          {cardPlans.map((plan) => (
+          {pricing.map((feature, index) => (
             <CardPlan
-              name={plan.name}
-              price={plan.price}
-              description={plan.description}
-              key={plan.name}
+              name={feature.name}
+              key={index}
+              description={feature.desc}
+              features={feature.features}
+              price={feature.price}
             />
           ))}
         </div>
