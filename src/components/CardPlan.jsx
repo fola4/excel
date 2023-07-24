@@ -7,7 +7,7 @@ function CardPlan({ name, price, description, features }) {
         name === "Family Plan" ? "border-2 border-red-600" : "border-gray-400"
       }`}
     >
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col items-center gap-y-3 sm:flex-row sm:justify-between">
         <h4 className="text-lg font-bold">{name}</h4>
         {name === "Family Plan" && (
           <p className="rounded-3xl bg-red-500 px-3 py-1 text-sm font-bold">
@@ -23,8 +23,10 @@ function CardPlan({ name, price, description, features }) {
       </p>
 
       <button
-        className={`mt-6 w-full rounded-md bg-white bg-opacity-10 px-3 py-2 text-sm font-bold ${
-          name === "Family Plan" && "bg-red-500 bg-opacity-100"
+        className={`mt-6 w-full rounded-md px-3 py-2 text-sm font-bold ${
+          name === "Family Plan"
+            ? "bg-red-500 bg-opacity-100"
+            : "bg-white bg-opacity-10"
         }`}
       >
         Buy Plan

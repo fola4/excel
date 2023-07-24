@@ -10,7 +10,7 @@ function Feature({ index, description }) {
 
   return (
     <div
-      className={`group relative flex max-w-md flex-col gap-y-3 rounded-lg p-8 pt-16 odd:bg-red-500 even:bg-gray-900`}
+      className={`group relative flex max-w-md flex-col gap-y-3 rounded-lg p-8 pt-16 odd:bg-red-500 even:bg-black`}
     >
       <img
         src={featureImage}

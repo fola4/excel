@@ -20,9 +20,10 @@ export default function About() {
         </div>
       </header>
 
-      <section className="px-12">
+      <section className="px-12 py-8">
         <h2 className="px-3 py-3 text-center text-2xl tracking-widest md:py-8">
-          Halkwinds don't just strive for client's success but delivers it.
+          BadmintonExcel doesn't just strive for client's success, but delivers
+          it.
         </h2>
 
         <div className="grid">
