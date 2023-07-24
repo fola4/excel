@@ -12,37 +12,53 @@ function Membership() {
             <h2 id="getInTouch" className="mb-0 pt-2 text-7xl">
               Get In Touch
             </h2>
-            <p className="border-b border-gray-400 py-10 text-2xl font-thin">
+            <p className="border-b border-gray-400 py-8 text-2xl font-thin">
               Ready to experience the excitement of badminton?<br></br>Let us
               help you become even greater at what you do . Get in touch now and
               unleash your potential on the court!
             </p>
 
-            <div className="mt-5 flex flex-col gap-y-5 text-2xl">
-              <a
-                href="https://www.google.com/maps/search/?api=1&query=Barnet, North London"
-                target="_blank"
-              >
-                <i
-                  className="fa-sharp fa-solid fa-location-dot mr-2"
-                  style={{ color: "#818181" }}
-                ></i>
-                Barnet, North London
-              </a>
-              <p>
-                <i
-                  className="fa-sharp fa-solid fa-phone-volume mr-2"
-                  style={{ color: "#818181" }}
-                ></i>
-                <a href="tel:+2347069637865">+2347069637865</a>
-              </p>
-              <p>
-                <i
-                  className="fa-sharp fa-solid fa-envelope mr-2"
-                  style={{ color: "#818181" }}
-                ></i>
-                information@office.com
-              </p>
+            <div className="mt-3 grid grid-cols-1 gap-y-8 md:grid-cols-2">
+              <div className="text-md self-center">
+                <p className="flex justify-center">
+                  Our club nights are: <br /> Tuesday 8:40pm - 10:00pm <br />
+                  (Rocket) feathers
+                </p>
+                <p className="flex justify-center">
+                  Thursday 6:40pm - 08:40pm <br />
+                  (Ace) feathers
+                </p>
+                <p className="flex justify-center">
+                  Sunday 3pm - 4:30pm <br />
+                  (Family one) plastics/feathers
+                </p>
+              </div>
+              <div className="flex flex-col gap-y-5 self-center text-xl">
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=Barnet, North London"
+                  target="_blank"
+                >
+                  <i
+                    className="fa-sharp fa-solid fa-location-dot mr-2"
+                    style={{ color: "#818181" }}
+                  ></i>
+                  Barnet, North London
+                </a>
+                <p>
+                  <i
+                    className="fa-sharp fa-solid fa-phone-volume mr-2"
+                    style={{ color: "#818181" }}
+                  ></i>
+                  <a href="tel:+2347069637865">+2347069637865</a>
+                </p>
+                <p>
+                  <i
+                    className="fa-sharp fa-solid fa-envelope mr-2"
+                    style={{ color: "#818181" }}
+                  ></i>
+                  information@office.com
+                </p>
+              </div>
             </div>
           </div>
 

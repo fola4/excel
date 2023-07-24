@@ -92,11 +92,11 @@ function MainPage() {
               all abilities, providing coaching and family sessions.
             </h2>
 
-            <Link to="/about us">
-              <button className="btn3 border-black text-black hover:bg-black hover:text-white">
+            <a href="./about us">
+              <button className="rounded-3xl border border-black px-5 py-2 text-2xl text-black transition hover:bg-black  hover:text-white">
                 About Us
               </button>
-            </Link>
+            </a>
           </div>
         </div>
 
@@ -138,14 +138,16 @@ function MainPage() {
 
       {/* <!-- section 5 --> */}
       <article className="relative px-2 py-8">
-        <i className="fa-solid fa-quote-left absolute left-0 top-0 text-9xl opacity-10 md:text-[10rem] lg:text-[15rem]" />
-        <i className="fa-solid fa-quote-right absolute bottom-0 right-0 text-9xl opacity-10 md:text-[10rem] lg:text-[15rem]"></i>
+        <i className="fa-solid fa-quote-left absolute left-0 top-0 text-[10rem] text-black opacity-20 md:text-[10rem] lg:text-[15rem]" />
+        <i className="fa-solid fa-quote-right absolute bottom-0 right-0 text-[10rem] text-black opacity-20 md:text-[10rem] lg:text-[15rem]"></i>
 
         <h3 className="text-center text-5xl font-light md:text-6xl lg:text-8xl">
-          "When you play badminton, play with passion, play with heart, and
-          leave everything on the court."
+          "When you play badminton, play with{" "}
+          <span className="text-red-500">passion</span>, play with{" "}
+          <span className="text-red-500">heart</span>, and leave{" "}
+          <span className="text-red-500">everything</span> on the court."
         </h3>
-        <hr />
+
         <p className="text-right">- Gail Emms</p>
       </article>
     </div>

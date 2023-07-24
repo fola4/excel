@@ -109,7 +109,7 @@ export const pricing = [
   },
   {
     name: "Family Plan",
-    desc: "Exclusive family badminton, with complimentary racket rentals.",
+    desc: "Exclusive court access anytime, complimentary racket rentals for ultimate family fun.",
     price: 30,
     features: [
       "Exclusive and unlimited parents and kids court access.",
@@ -126,5 +126,34 @@ export const pricing = [
       "Focus on techniques and tactics.",
       "Strengthen family bonds.",
     ],
+  },
+];
+
+export const aboutUs = [
+  {
+    letter: "E",
+    description:
+      "grabbed shape point loose friendly danger heard consist syllable truth film serve surrounded vast courage problem art ate strong stone wealth extra top voyageExcel is known for it's unprecedented success toward Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quasi culpa! Quasi ex voluptas reprehenderit quam qui adipisci rerum maiores, officiis dolore fuga placeat facilis deserunt provident, aut consequuntur autem?",
+  },
+  {
+    letter: "X",
+    description:
+      "wheel job printed grow given pan fur official rain stared deeply spell language depth coast gave put naturally familiar fireplace plant tropical dead becauseExcel is known for it's unprecedented success toward Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quasi culpa! Quasi ex voluptas reprehenderit quam qui adipisci rerum maiores, officiis dolore fuga placeat facilis deserunt provident, aut consequuntur autem?",
+  },
+  {
+    letter: "C",
+    description:
+      "Creating some textCreating some textCreating some textCreating some textCreating some textCreating some textCreating some textCreating some textCreating some textCreating some textCreating some textCreating some textCreating some textCreating some textCreating some textCreating some textCreating some textCreating some textCreating some textCreating some textCreating some textCreating some textCreating some textCreating some text",
+  },
+
+  {
+    letter: "E",
+    description:
+      "expression birds merely music track corn arm second zoo pay immediately rabbit plus everywhere hollow victory plastic married bean every command other visitor painExcel is known for it's unprecedented success toward Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quasi culpa! Quasi ex voluptas reprehenderit quam qui adipisci rerum maiores, officiis dolore fuga placeat facilis deserunt provident, aut consequuntur autem?",
+  },
+  {
+    letter: "L",
+    description:
+      "observe rice nuts sometime evidence jar walk experience plural because child private rays dinner unhappy spin grow clearly piano lose muscle once recall offerExcel is known for it's unprecedented success toward Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quasi culpa! Quasi ex voluptas reprehenderit quam qui adipisci rerum maiores, officiis dolore fuga placeat facilis deserunt provident, aut consequuntur autem?",
   },
 ];

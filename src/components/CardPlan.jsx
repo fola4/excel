@@ -22,15 +22,17 @@ function CardPlan({ name, price, description, features }) {
         <span className="self-center text-xs uppercase">/session</span>
       </p>
 
-      <button
-        className={`mt-6 w-full rounded-md px-3 py-2 text-sm font-bold ${
-          name === "Family Plan"
-            ? "bg-red-500 bg-opacity-100"
-            : "bg-white bg-opacity-10"
-        }`}
-      >
-        Buy Plan
-      </button>
+      <a href="./membership#">
+        <button
+          className={`mt-6 w-full rounded-md px-3 py-2 text-sm font-bold ${
+            name === "Family Plan"
+              ? "bg-red-500 bg-opacity-100"
+              : "bg-white bg-opacity-10"
+          }`}
+        >
+          Join Us
+        </button>
+      </a>
 
       <ul className="mt-4 space-y-3">
         {features.map((feature, index) => (

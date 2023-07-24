@@ -32,11 +32,11 @@ function Footer() {
       </div>
 
       {/* <!-- badminton --> */}
-      <div className="flex flex-col items-center md:flex-row md:justify-between">
+      <div className="flex flex-col items-center gap-y-8 md:flex-row md:justify-between">
         <div>
+          <p className="text-center lg:text-left">BadmintonExcel</p>
           <a href="#" id="logo" className="font-light">
-            <span>BadmintonExcel</span>
-            <p className="text-2xl tracking-widest">
+            <p className="text-center text-2xl tracking-widest">
               Embrace <span className="text-red-600">Diversity</span>, Elevate
               Skills, <span className="text-red-600">Achieve</span> Fitness !
             </p>
@@ -48,7 +48,7 @@ function Footer() {
             Let's play
           </h4>
           <Link to="/membership#membership">
-            <button className="btn3 whitespace-nowrap border-black px-2 py-3 text-black hover:bg-black hover:text-white">
+            <button className="whitespace-nowrap rounded-3xl border border-white px-5 py-2 text-white hover:bg-black hover:text-white">
               Register with us !
             </button>
           </Link>

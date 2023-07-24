@@ -1,12 +1,13 @@
 import React from "react";
-import { features } from "../constants";
+import { aboutUs, features } from "../constants";
 import Feature from "../components/Feature";
+import AboutDesc from "../components/AboutDesc";
 
 export default function About() {
   return (
     <div>
       <header id="about-us" className="grid">
-        <div className=" absolute left-0 top-0 h-full w-full bg-black opacity-75"></div>
+        <div className=" absolute left-0 top-0 h-full w-full bg-black opacity-60"></div>
 
         {/* <!-- content --> */}
         <div className="relative z-20 self-center text-4xl capitalize text-white">
@@ -33,6 +34,16 @@ export default function About() {
             ))}
           </div>
         </div>
+      </section>
+
+      <section className="grid bg-red-500 p-8">
+        {aboutUs.map((about, index) => (
+          <AboutDesc
+            letter={about.letter}
+            description={about.description}
+            key={index}
+          />
+        ))}
       </section>
     </div>
   );
