@@ -133,27 +133,27 @@ export const aboutUs = [
   {
     letter: "E",
     description:
-      "grabbed shape point loose friendly danger heard consist syllable truth film serve surrounded vast courage problem art ate strong stone wealth extra top voyageExcel is known for it's unprecedented success toward Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quasi culpa! Quasi ex voluptas reprehenderit quam qui adipisci rerum maiores, officiis dolore fuga placeat facilis deserunt provident, aut consequuntur autem?",
+      "Elevate Skills. At Badminton Excel, we are dedicated to elevating your badminton skills. Our expert coaches provide personalised training to help you excel on the court.",
   },
   {
     letter: "X",
     description:
-      "wheel job printed grow given pan fur official rain stared deeply spell language depth coast gave put naturally familiar fireplace plant tropical dead becauseExcel is known for it's unprecedented success toward Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quasi culpa! Quasi ex voluptas reprehenderit quam qui adipisci rerum maiores, officiis dolore fuga placeat facilis deserunt provident, aut consequuntur autem?",
+      "Xtreme fitness. Get ready to acheive extreme fitness levels at our club. Our training programme focus on building stamina, agility as well as weight loss and endurance ensuring you stay at the top of your game.",
   },
   {
     letter: "C",
     description:
-      "Creating some textCreating some textCreating some textCreating some textCreating some textCreating some textCreating some textCreating some textCreating some textCreating some textCreating some textCreating some textCreating some textCreating some textCreating some textCreating some textCreating some textCreating some textCreating some textCreating some textCreating some textCreating some textCreating some textCreating some text",
+      "Continuous Improvement. Strive for constant growth and development, both on and off the court. Encourage players to push their boundaries and reach new heights in their badminton journey.",
   },
 
   {
     letter: "E",
     description:
-      "expression birds merely music track corn arm second zoo pay immediately rabbit plus everywhere hollow victory plastic married bean every command other visitor painExcel is known for it's unprecedented success toward Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quasi culpa! Quasi ex voluptas reprehenderit quam qui adipisci rerum maiores, officiis dolore fuga placeat facilis deserunt provident, aut consequuntur autem?",
+      "Exceed Expectations. At Badminton Excel, we strive to exceed expectations in every aspect. Fron top-notch coaching to organizing exceptional events, we aim to provide an unparalleled badmintonexperience that inspires greatness.",
   },
   {
     letter: "L",
     description:
-      "observe rice nuts sometime evidence jar walk experience plural because child private rays dinner unhappy spin grow clearly piano lose muscle once recall offerExcel is known for it's unprecedented success toward Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quasi culpa! Quasi ex voluptas reprehenderit quam qui adipisci rerum maiores, officiis dolore fuga placeat facilis deserunt provident, aut consequuntur autem?",
+      "Lifelong friendship. Beyond the game, BadmintonExcel is a place where lifelong friendships are formed. Connect with like-minded badminton enthusiasts and be part of a supportive community that shares the passion for sport.",
   },
 ];

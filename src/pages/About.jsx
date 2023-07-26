@@ -7,24 +7,25 @@ export default function About() {
   return (
     <div>
       <header id="about-us" className="grid">
-        <div className=" absolute left-0 top-0 h-full w-full bg-black opacity-60"></div>
+        <div className=" absolute left-0 top-0 h-full w-full bg-black opacity-60" />
 
         {/* <!-- content --> */}
         <div className="relative z-20 self-center text-4xl capitalize text-white">
-          <h1>We don't strive</h1>
-          <h1>We Deliver Client's success</h1>
+          <h1>We don't settle for attempts</h1>
+          <h1>We ensure triumph in the world of badminton.</h1>
 
           <p className=" text-lg">
-            Halkwinds specializes in delivering real time business solution for
-            your custom software development needs.
+            BadmintonExcel champions in delivering dynamic solutions for your
+            badminton development needs, empowering your sporting journey to new
+            heights.
           </p>
         </div>
       </header>
 
       <section className="px-12 py-8">
         <h2 className="px-3 py-3 text-center text-2xl tracking-widest md:py-8">
-          BadmintonExcel doesn't just strive for client's success, but delivers
-          it.
+          At badmintonExcel, we smash through barriers, delivering unmatched
+          success for our clients with passion and precision.
         </h2>
 
         <div className="grid">

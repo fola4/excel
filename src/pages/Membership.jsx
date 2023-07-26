@@ -19,7 +19,7 @@ function Membership() {
             </p>
 
             <div className="mt-3 grid grid-cols-1 gap-y-8 md:grid-cols-2">
-              <div className="text-md self-center">
+              <div className="text-md self-center md:self-start">
                 <p className="flex justify-center">
                   Our club nights are: <br /> Tuesday 8:40pm - 10:00pm <br />
                   (Rocket) feathers
@@ -62,10 +62,7 @@ function Membership() {
             </div>
           </div>
 
-          <form
-            onSubmit={(event) => event.preventDefault()}
-            className="order-1 rounded-xl bg-[hsla(0,0%,99%,.1)] px-8 pb-10 pt-5 lg:order-3"
-          >
+          <form className="order-1 rounded-xl bg-[hsla(0,0%,99%,.1)] px-8 pb-10 pt-5 lg:order-3">
             <p className="my-10 text-center text-5xl font-medium text-[hsla(0,0%,95%)]">
               Join Our Team
             </p>
