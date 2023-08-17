@@ -20,18 +20,21 @@ function Membership() {
 
             <div className="mt-3 grid grid-cols-1 gap-y-8 md:grid-cols-2">
               <div className="text-md self-center md:self-start">
-                <p className="flex justify-center">
-                  Our club nights are: <br /> Tuesday 8:40pm - 10:00pm <br />
-                  (Rocket) feathers
-                </p>
-                <p className="flex justify-center">
-                  Thursday 6:40pm - 08:40pm <br />
-                  (Ace) feathers
-                </p>
-                <p className="flex justify-center">
-                  Sunday 3pm - 4:30pm <br />
-                  (Family one) plastics/feathers
-                </p>
+                <div className="flex flex-col justify-center">
+                  <p className=" font-bold uppercase italic ">
+                    Our club nights
+                  </p>
+                  <p>Tuesday 8:40pm - 10:00pm</p>
+                  <p>(Rocket) feathers</p>
+                </div>
+                <div className="flex flex-col justify-center">
+                  <p>Thursday 6:40pm - 08:40pm</p>
+                  <p>(Ace) Feathers</p>
+                </div>
+                <div className="flex flex-col justify-center">
+                  <p>Sunday 3pm - 4:30pm </p>
+                  <p>(Family one) plastics/feathers</p>
+                </div>
               </div>
               <div className="flex flex-col gap-y-5 self-center text-xl">
                 <a

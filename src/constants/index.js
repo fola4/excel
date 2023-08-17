@@ -132,28 +132,33 @@ export const pricing = [
 export const aboutUs = [
   {
     letter: "E",
+    name: "Elevate Skills",
     description:
-      "Elevate Skills. At Badminton Excel, we are dedicated to elevating your badminton skills. Our expert coaches provide personalised training to help you excel on the court.",
+      "At Badminton Excel, we are dedicated to elevating your badminton skills. Our expert coaches provide personalised training to help you excel on the court.",
   },
   {
     letter: "X",
+    name: "Xtreme fitness",
     description:
-      "Xtreme fitness. Get ready to acheive extreme fitness levels at our club. Our training programme focus on building stamina, agility as well as weight loss and endurance ensuring you stay at the top of your game.",
+      "Our training programme focus on building stamina, agility as well as weight loss and endurance ensuring you stay at the top of your game.",
   },
   {
     letter: "C",
+    name: "Continous Development",
     description:
-      "Continuous Improvement. Strive for constant growth and development, both on and off the court. Encourage players to push their boundaries and reach new heights in their badminton journey.",
+      "Encourage players to push their boundaries and reach new heights in their badminton journey.",
   },
 
   {
     letter: "E",
+    name: "Exceed Expectations",
     description:
-      "Exceed Expectations. At Badminton Excel, we strive to exceed expectations in every aspect. Fron top-notch coaching to organizing exceptional events, we aim to provide an unparalleled badmintonexperience that inspires greatness.",
+      "From top-notch coaching to organizing exceptional events, we aim to provide an unparalleled badminton experience that inspires greatness.",
   },
   {
     letter: "L",
+    name: "Lifelong friendship",
     description:
-      "Lifelong friendship. Beyond the game, BadmintonExcel is a place where lifelong friendships are formed. Connect with like-minded badminton enthusiasts and be part of a supportive community that shares the passion for sport.",
+      "Connect with like-minded badminton enthusiasts and be part of a supportive community that shares the passion for sport.",
   },
 ];
