@@ -5,7 +5,7 @@ function CardPlan({ name, price, description, features }) {
     <div
       className={`rounded-2xl border p-8 ${
         name === "Family Plan" ? "border-2 border-red-600" : "border-gray-400"
-      }`}
+      } transition duration-150 hover:scale-105`}
     >
       <div className="flex flex-col items-center gap-y-3 sm:flex-row sm:justify-between">
         <h4 className="text-lg font-bold">{name}</h4>
