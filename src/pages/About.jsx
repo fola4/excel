@@ -26,7 +26,7 @@ export default function About() {
       </header>
 
       <section className="space-y-3 px-12 py-32">
-        <h2 className="text-md tracking-widest md:px-16  md:pb-8 md:text-center lg:text-2xl">
+        <h2 className="text-md tracking-widest md:px-16  md:pb-8 md:text-center lg:text-2xl xl:px-80">
           We smash through barriers, delivering unmatched success for our
           clients with passion and precision.
         </h2>
