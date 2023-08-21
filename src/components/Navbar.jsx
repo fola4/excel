@@ -31,7 +31,7 @@ function Navbar() {
 
       {/* Hamburger button */}
       <button
-        className="z-50 flex h-10 w-10 items-center justify-center bg-white md:hidden"
+        className="z-50 flex h-10 w-10 items-center justify-center md:hidden"
         onClick={() => setMenuOpen((prev) => !prev)}
       >
         <img src={!menuOpen ? menu : close} alt="menu-icon" />
