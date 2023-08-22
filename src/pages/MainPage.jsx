@@ -137,18 +137,20 @@ function MainPage() {
       </section>
 
       {/* <!-- section 5 --> */}
-      <article className="relative px-2 py-8">
+      <article className="relative px-4 py-16">
         <i className="fa-solid fa-quote-left absolute left-0 top-0 text-[10rem] text-black opacity-20 md:text-[10rem] lg:text-[15rem]" />
         <i className="fa-solid fa-quote-right absolute bottom-0 right-0 text-[10rem] text-black opacity-20 md:text-[10rem] lg:text-[15rem]"></i>
 
-        <h3 className="text-center text-5xl font-light md:text-6xl lg:text-8xl">
+        <h3 className="text-center text-5xl font-light leading-[1.1] md:text-6xl lg:px-6 lg:text-8xl lg:leading-[1.35]">
           "When you play badminton, play with{" "}
           <span className="text-red-500">passion</span>, play with{" "}
           <span className="text-red-500">heart</span>, and leave{" "}
           <span className="text-red-500">everything</span> on the court."
         </h3>
 
-        <p className="text-right">- Gail Emms</p>
+        <hr className="my-8 border-black" />
+
+        <p className="italic lg:pt-8 lg:text-2xl">- Gail Emms</p>
       </article>
     </div>
   );
