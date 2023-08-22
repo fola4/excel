@@ -13,6 +13,7 @@ import concept from "./badminton-concept-with-shuttlecock-racket (1).jpg";
 import menu from "./icon-menu.svg";
 import close from "./icon-close-menu.svg";
 import featureImage from "./bg_about1.svg";
+import logo from "./logo.svg";
 
 export {
   oldRacketCork,
@@ -30,4 +31,5 @@ export {
   menu,
   close,
   featureImage,
+  logo,
 };

@@ -1,8 +1,9 @@
 import React from "react";
-import { cardPlans, features, pricing, socialIcons } from "../constants";
+import { pricing, socialIcons } from "../constants";
 import CardPlan from "./CardPlan";
 import SocialIcon from "./SocialIcon";
 import { Link } from "react-router-dom";
+import { logo } from "../assets/images";
 
 function Footer() {
   return (
@@ -34,7 +35,7 @@ function Footer() {
       {/* <!-- badminton --> */}
       <div className="flex flex-col items-center gap-y-8 md:flex-row md:justify-between">
         <div>
-          <p className="text-center lg:text-left">BadmintonExcel</p>
+          <img src={logo} alt="logo" className="w-28" />
           <a href="#" id="logo" className="font-light">
             <p className="text-center text-2xl tracking-widest">
               Embrace <span className="text-red-600">Diversity</span>, Elevate

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import NavbarLink from "./NavbarLink";
 import { Link } from "react-router-dom";
-import { close, menu } from "../assets/images";
+import { close, menu, logo } from "../assets/images";
 import MobileLinks from "./MobileLinks";
 
 function Navbar() {
@@ -10,9 +10,9 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed z-30 flex w-full items-center justify-between bg-black px-8 py-8">
-      <Link to="/" className="text-white">
-        BadmintonExcel
+    <nav className="fixed z-30 flex w-full items-center justify-between bg-black px-8">
+      <Link to="/">
+        <img src={logo} alt="logo" className="w-28" />
       </Link>
 
       <div

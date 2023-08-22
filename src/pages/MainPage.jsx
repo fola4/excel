@@ -34,8 +34,8 @@ function MainPage() {
       </header>
 
       {/* <!-- section 2 --> */}
-      <section className="grid grid-cols-1 grid-rows-2 gap-y-8 bg-black px-8 py-10 lg:grid-cols-2 lg:grid-rows-1 lg:gap-x-8 lg:py-12 xl:grid-cols-[45%_1fr_45%]">
-        <div className="flex flex-col gap-y-8 text-[#818181] xl:gap-y-12">
+      <section className="grid grid-cols-1 grid-rows-2 gap-y-8 bg-black px-8 py-12 lg:grid-cols-2 lg:grid-rows-1 lg:gap-x-8 lg:py-28 xl:grid-cols-[45%_1fr_45%]">
+        <div className="flex flex-col gap-y-8 text-[#818181] xl:gap-y-12 xl:self-center">
           <h1 className="text-center font-medium tracking-widest lg:text-left lg:text-xl">
             LEADING #1 BADMINTON CENTRE
           </h1>
@@ -55,22 +55,22 @@ function MainPage() {
           </Link>
         </div>
 
-        <div className="max-width grid grid-cols-2 grid-rows-2 gap-8 text-white xl:col-start-3">
-          <div className="flex flex-col justify-between">
+        <div className="max-width grid grid-cols-2 grid-rows-2 gap-12 text-white xl:col-start-3">
+          <div className="flex flex-col gap-y-8">
             <span className="h-full text-8xl lg:text-7xl xl:text-9xl">5+</span>
             <p id="sub-text">Professional Trainers</p>
           </div>
-          <div className="flex flex-col justify-between">
+          <div className="flex flex-col gap-y-8">
+            <span className="h-full text-8xl lg:text-7xl xl:text-9xl">10</span>
+            <p id="sub-text">Professional Trainers</p>
+          </div>
+          <div className="flex flex-col gap-y-8">
             <span className="h-full text-8xl lg:text-7xl xl:text-9xl">
               10K+
             </span>
             <p id="sub-text">Professional Trainers</p>
           </div>
-          <div className="flex flex-col justify-between">
-            <span className="h-full text-8xl lg:text-7xl xl:text-9xl">10+</span>
-            <p id="sub-text">Professional Trainers</p>
-          </div>
-          <div className="flex flex-col justify-between">
+          <div className="flex flex-col gap-y-8">
             <span className="h-full text-8xl lg:text-7xl xl:text-9xl">
               13k+
             </span>
