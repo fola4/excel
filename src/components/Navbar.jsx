@@ -10,9 +10,9 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed z-30 flex w-full items-center justify-between bg-black px-8">
+    <nav className="fixed z-30 flex w-full items-center justify-between bg-black pr-8">
       <Link to="/">
-        <img src={logo} alt="logo" className="w-28" />
+        <img src={logo} alt="logo" className="ml-3 w-28" />
       </Link>
 
       <div

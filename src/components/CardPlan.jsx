@@ -1,6 +1,6 @@
 import React from "react";
 
-function CardPlan({ name, price, description, features }) {
+function CardPlan({ name, price, description, features, kids, adults }) {
   return (
     <div
       className={`rounded-2xl border p-8 ${
@@ -17,14 +17,24 @@ function CardPlan({ name, price, description, features }) {
       </div>
       <p className="mt-4 text-sm">{description}</p>
 
-      <p className="mt-6 flex gap-1">
-        <span className="text-4xl font-bold">${price}</span>
-        <span className="self-center text-xs uppercase">/session</span>
+      <div className="mt-3 flex justify-between">
+        <div>
+          <p className="text-2xl">{kids}</p>
+          <p className="text-xs font-thin uppercase text-red-500">kids</p>
+        </div>
+
+        <div>
+          <p className="text-2xl">{adults}</p>
+          <p className="text-xs font-thin uppercase text-red-500">adults</p>
+        </div>
+      </div>
+      <p className="my-3 text-center text-xs uppercase tracking-[.7rem]">
+        per session
       </p>
 
       <a href="./membership#">
         <button
-          className={`mt-6 w-full rounded-md px-3 py-2 text-sm font-bold ${
+          className={`mt-3 w-full rounded-md px-3 py-2 text-sm font-bold ${
             name === "Family Plan"
               ? "bg-red-500 bg-opacity-100"
               : "bg-white bg-opacity-10"

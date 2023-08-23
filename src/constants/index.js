@@ -101,6 +101,8 @@ export const pricing = [
     name: "Standard",
     desc: "Casual individual badminton with court access during regular hours.",
     price: 15,
+    kids: "£4",
+    adults: "£8",
     features: [
       "Court access during regular hours.",
       "Family-friendly for all skill levels.",
@@ -111,6 +113,8 @@ export const pricing = [
     name: "Family Plan",
     desc: "Exclusive court access anytime, complimentary racket rentals for ultimate family fun.",
     price: 30,
+    kids: "£8",
+    adults: "£8",
     features: [
       "Exclusive and unlimited parents and kids court access.",
       "Flexible playing hours.",
@@ -121,6 +125,8 @@ export const pricing = [
     name: "Coached Session",
     desc: "Personalized training from a pro coach for improved skills and family bonding.",
     price: 45,
+    kids: "£8",
+    adults: "£15",
     features: [
       "Personalized training with coach.",
       "Focus on techniques and tactics.",
