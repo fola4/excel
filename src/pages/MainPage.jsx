@@ -34,8 +34,8 @@ function MainPage() {
       </header>
 
       {/* <!-- section 2 --> */}
-      <section className="grid grid-cols-1 grid-rows-2 gap-y-8 bg-black px-8 py-12 lg:grid-cols-2 lg:grid-rows-1 lg:gap-x-8 lg:py-28 xl:grid-cols-[45%_1fr_45%]">
-        <div className="flex flex-col gap-y-8 text-[#818181] xl:gap-y-12 xl:self-center">
+      <section className="grid auto-rows-auto grid-cols-1 grid-rows-[400px_1fr] gap-y-8 bg-black px-8 py-12 lg:grid-cols-2 lg:grid-rows-1 lg:gap-x-8 lg:py-28 xl:grid-cols-[45%_1fr_45%]">
+        <div className="flex flex-col space-y-8 text-[#818181] xl:space-y-12 xl:self-center">
           <h1 className="text-center font-medium tracking-widest lg:text-left lg:text-xl">
             LEADING #1 BADMINTON CENTRE
           </h1>
@@ -88,7 +88,7 @@ function MainPage() {
             </span>
 
             <h2 className="font-bold lg:text-3xl lg:tracking-widest">
-              Founded by diverse badminton fans in Barnet, London, We welcomes
+              Founded by diverse badminton fans in Barnet, London, We welcome
               all abilities, providing coaching and family sessions.
             </h2>
 
@@ -101,7 +101,13 @@ function MainPage() {
         </div>
 
         <div>
-          <video src={video} autoPlay muted loop className="video" />
+          <video
+            src={video}
+            autoPlay={true}
+            muted={true}
+            loop={true}
+            className="video"
+          />
         </div>
       </section>
 

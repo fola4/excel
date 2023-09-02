@@ -14,6 +14,10 @@ import menu from "./icon-menu.svg";
 import close from "./icon-close-menu.svg";
 import featureImage from "./bg_about1.svg";
 import logo from "./logo.svg";
+import badWithRacket from "./wImage-01.jpg";
+import handCork from "./wImage-02.jpg";
+import lyingCorks from "./wImage-03.jpg";
+import grassCork from "./wImage-04.jpg";
 
 export {
   oldRacketCork,
@@ -32,4 +36,8 @@ export {
   close,
   featureImage,
   logo,
+  badWithRacket,
+  grassCork,
+  handCork,
+  lyingCorks,
 };

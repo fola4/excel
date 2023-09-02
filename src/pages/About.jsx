@@ -17,7 +17,7 @@ export default function About() {
             We ensure triumph in the world of badminton.
           </h1>
 
-          <p className=" text-lg md:text-2xl lg:w-1/2">
+          <p className="mt-8 text-lg italic text-red-100 md:text-2xl lg:w-1/2">
             BadmintonExcel champions in delivering dynamic solutions for your
             badminton development needs, empowering your sporting journey to new
             heights.

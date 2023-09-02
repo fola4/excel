@@ -52,14 +52,14 @@ function Membership() {
                     className="fa-sharp fa-solid fa-phone-volume mr-2"
                     style={{ color: "#818181" }}
                   ></i>
-                  <a href="tel:+2347069637865">+2347069637865</a>
+                  <a href="tel:+447956804395">+447956804395</a>
                 </p>
                 <p>
                   <i
                     className="fa-sharp fa-solid fa-envelope mr-2"
                     style={{ color: "#818181" }}
                   ></i>
-                  information@office.com
+                  von@quarteroneconsulting.com
                 </p>
               </div>
             </div>
