@@ -5,11 +5,11 @@ import { Link } from "react-router-dom";
 function MainPage() {
   return (
     <div>
-      <header id="main-page">
+      <header id="main-page" className="px-0">
         {/* hero content */}
         <div className="grid h-full">
           <div className="flex flex-col gap-y-8 self-center">
-            <h1 className="text-center text-3xl font-bold tracking-widest text-white sm:text-5xl md:text-8xl lg:text-9xl">
+            <h1 className="text-center text-4xl font-bold tracking-widest text-white sm:text-5xl md:text-8xl lg:text-9xl">
               Being good at Badminton{" "}
               <span className="whitespace-nowrap">is everything.</span>
             </h1>
