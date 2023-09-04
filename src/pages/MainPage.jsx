@@ -80,9 +80,9 @@ function MainPage() {
       </section>
 
       {/* <!-- section 3 --> */}
-      <section className="grid grid-rows-2 md:grid-cols-2 md:grid-rows-1">
+      <section className="flex flex-col lg:flex-row">
         <div className="grid min-h-full place-items-center md:ml-8">
-          <div className="my-2 flex flex-col gap-y-8 text-center md:text-left">
+          <div className="my-2 flex flex-col gap-y-8 text-center lg:text-left">
             <span className="font-thin tracking-widest md:text-3xl">
               OUR STORY
             </span>
@@ -106,7 +106,7 @@ function MainPage() {
             autoPlay={true}
             muted={true}
             loop={true}
-            className="video"
+            className="hidden lg:block"
           />
         </div>
       </section>
