@@ -17,7 +17,7 @@ function Team() {
       </header>
 
       {/* <!-- This is the prototype of what you said, so we can go from here --> */}
-      <section className="my-5 mt-12 grid grid-cols-1 grid-rows-2 gap-12 px-12 md:grid-cols-2 lg:grid-cols-3">
+      <section className="my-5 mt-12 grid grid-cols-1 grid-rows-2 gap-12 px-12 md:grid-cols-2 lg:grid-cols-3 ">
         {teamMembers.map((member, index) => (
           <TeamMember key={index} name={member.name} image={member.image} />
         ))}
