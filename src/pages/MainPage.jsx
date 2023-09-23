@@ -1,6 +1,35 @@
 import React from "react";
-import { craig, video } from "../assets/images";
+import { video } from "../assets/images";
 import { Link } from "react-router-dom";
+import { teamMembers } from "../constants";
+import TeamMember from "../components/TeamMember";
+import { motion } from "framer-motion";
+
+const fade = {
+  hiddenLeft: {
+    x: "-30vw",
+    opacity: 0,
+  },
+  hiddenRight: {
+    x: "30vw",
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: { duration: 1, when: "beforeChildren" },
+  },
+};
+
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 5,
+    },
+  },
+};
 
 function MainPage() {
   return (
@@ -35,7 +64,12 @@ function MainPage() {
 
       {/* <!-- section 2 --> */}
       <section className="grid auto-rows-auto grid-cols-1 grid-rows-[400px_1fr] gap-y-8 bg-black px-8 py-12 lg:grid-cols-2 lg:grid-rows-1 lg:gap-x-8 lg:py-28 xl:grid-cols-[45%_1fr_45%]">
-        <div className="flex flex-col space-y-8 text-[#818181] xl:space-y-12 xl:self-center">
+        <motion.div
+          className="flex flex-col space-y-8 text-[#818181] xl:space-y-12 xl:self-center"
+          variants={fade}
+          initial="hiddenLeft"
+          whileInView="animate"
+        >
           <h1 className="text-center font-medium tracking-widest lg:text-left lg:text-xl">
             LEADING #1 BADMINTON CENTRE
           </h1>
@@ -53,30 +87,39 @@ function MainPage() {
               get in touch
             </button>
           </Link>
-        </div>
+        </motion.div>
 
-        <div className="max-width grid grid-cols-2 grid-rows-2 gap-12 text-white xl:col-start-3">
+        <motion.div
+          className="max-width grid grid-cols-2 grid-rows-2 gap-12 text-white xl:col-start-3"
+          variants={fade}
+          initial="hiddenRight"
+          whileInView="animate"
+        >
           <div className="flex flex-col gap-y-8">
-            <span className="h-full text-8xl lg:text-7xl xl:text-9xl">5+</span>
+            <span className="flex h-full text-8xl lg:text-7xl xl:text-9xl">
+              5+
+            </span>
             <p id="sub-text">Professional Trainers</p>
           </div>
           <div className="flex flex-col gap-y-8">
-            <span className="h-full text-8xl lg:text-7xl xl:text-9xl">10</span>
+            <span className="flex h-full text-8xl lg:text-7xl xl:text-9xl">
+              10
+            </span>
             <p id="sub-text">Professional Trainers</p>
           </div>
           <div className="flex flex-col gap-y-8">
-            <span className="h-full text-8xl lg:text-7xl xl:text-9xl">
+            <span className="flex h-full text-8xl lg:text-7xl xl:text-9xl">
               10K+
             </span>
             <p id="sub-text">Professional Trainers</p>
           </div>
           <div className="flex flex-col gap-y-8">
-            <span className="h-full text-8xl lg:text-7xl xl:text-9xl">
+            <span className="flex h-full text-8xl lg:text-7xl xl:text-9xl">
               13k+
             </span>
             <p id="sub-text">Professional Trainers</p>
           </div>
-        </div>
+        </motion.div>
       </section>
 
       {/* <!-- section 3 --> */}
@@ -122,30 +165,27 @@ function MainPage() {
           </p>
         </div>
 
-        <div className="grid gap-x-12 gap-y-12 md:grid-cols-2 lg:grid-cols-4">
-          <div>
-            <img src={craig} alt="" className="imges" />
-            <p className="image-text">Anderson Mike</p>
-          </div>
-          <div>
-            <img src={craig} alt="" className="imges" />
-            <p className="image-text">Anderson Mike</p>
-          </div>
-          <div>
-            <img src={craig} alt="" className="imges" />
-            <p className="image-text">Anderson Mike</p>
-          </div>
-          <div>
-            <img src={craig} alt="" className="imges" />
-            <p className="image-text">Anderson Mike</p>
-          </div>
-        </div>
+        <motion.div
+          className="grid gap-x-12 gap-y-12 overflow-y-hidden md:grid-cols-2 lg:grid-cols-4"
+          variants={container}
+          initial="hidden"
+          animate="show"
+        >
+          {teamMembers.slice(0, 4).map((member, index) => (
+            <TeamMember
+              key={index}
+              index={index}
+              name={member.name}
+              image={member.image}
+            />
+          ))}
+        </motion.div>
       </section>
 
       {/* <!-- section 5 --> */}
-      <article className="relative px-4 py-16">
-        <i className="fa-solid fa-quote-left absolute left-0 top-0 text-[10rem] text-black opacity-20 md:text-[10rem] lg:text-[15rem]" />
-        <i className="fa-solid fa-quote-right absolute bottom-0 right-0 text-[10rem] text-black opacity-20 md:text-[10rem] lg:text-[15rem]"></i>
+      <article className="group relative px-4 py-16">
+        <i className="fa-solid fa-quote-left absolute left-0 top-0 text-[10rem] text-black opacity-20 duration-1000 group-hover:rotate-[720deg] group-hover:scale-125 md:text-[10rem] lg:text-[15rem]" />
+        <i className="fa-solid fa-quote-right absolute bottom-0 right-0 text-[10rem] text-black opacity-20 duration-1000 group-hover:rotate-[-720deg] group-hover:scale-125 md:text-[10rem] lg:text-[15rem]"></i>
 
         <h3 className="text-center text-5xl font-light leading-[1.1] md:text-6xl lg:px-6 lg:text-8xl lg:leading-[1.35]">
           "When you play badminton, play with{" "}

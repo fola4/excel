@@ -24,6 +24,10 @@
   src: url(./assets/fonts/Satoshi-VariableItalic.ttf);
 }
 
+#root {
+  overflow-x: hidden;
+}
+
 header {
   @apply relative px-8 pt-28;
 }
