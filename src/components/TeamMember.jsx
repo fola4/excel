@@ -23,6 +23,9 @@ function TeamMember({ name, image, index }) {
       initial="hidden"
       whileInView="animate"
       custom={index}
+      viewport={{
+        once: true,
+      }}
     >
       <p className="absolute bottom-5 left-5 text-2xl text-white ">{name}</p>
       <img src={image} alt="team-member" />

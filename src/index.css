@@ -60,13 +60,13 @@ header {
   background-position: top;
   height: 100vh;
 }
-
+/* 
 #main-page {
   background-image: url(./assets/images/stephan-rothe-VePgmkq3hHI-unsplash.jpg);
   background-size: cover;
   background-position: top;
   height: 100vh;
-}
+} */
 
 .dot-block {
   @apply h-1 w-1 rounded-full bg-white md:h-2 md:w-2;
@@ -74,7 +74,6 @@ header {
 
 @media screen and (max-width: 500px) {
   .max-width {
-    margin-top: -6rem;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, minmax(0, 1fr));

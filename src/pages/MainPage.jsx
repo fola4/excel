@@ -1,9 +1,18 @@
 import React from "react";
-import { video } from "../assets/images";
+import {
+  video,
+  wImage01,
+  wImage02,
+  wImage03,
+  wImage04,
+  singleCork,
+  corkNet,
+} from "../assets/images";
 import { Link } from "react-router-dom";
 import { teamMembers } from "../constants";
 import TeamMember from "../components/TeamMember";
 import { motion } from "framer-motion";
+import Slideshow from "../components/Slider";
 
 const fade = {
   hiddenLeft: {
@@ -32,38 +41,16 @@ const container = {
 };
 
 function MainPage() {
+  let images = [corkNet, wImage03, wImage04];
+
   return (
     <div>
       <header id="main-page" className="px-0">
-        {/* hero content */}
-        <div className="grid h-full">
-          <div className="flex flex-col gap-y-8 self-center">
-            <h1 className="text-center text-4xl font-bold tracking-widest text-white sm:text-5xl md:text-8xl lg:text-9xl">
-              Being good at Badminton{" "}
-              <span className="whitespace-nowrap">is everything.</span>
-            </h1>
-
-            <div className="flex items-center gap-x-2 self-center text-white md:text-2xl lg:gap-x-5 lg:text-3xl">
-              <div>Study</div>
-              <div className="dot-block"></div>
-              <div>Practice</div>
-              <div className="dot-block"></div>
-              <div>Play</div>
-              <div className="dot-block"></div>
-              <div>Win</div>
-            </div>
-
-            <button className="self-center justify-self-end rounded-[6rem] border border-white px-4 py-3 font-bold text-white transition hover:border-transparent hover:bg-black lg:px-8 lg:py-4 lg:text-3xl">
-              <Link to="/membership" className="btn1">
-                Join Us Now
-              </Link>
-            </button>
-          </div>
-        </div>
+        <Slideshow images={images} page={"main"} />
       </header>
 
       {/* <!-- section 2 --> */}
-      <section className="grid auto-rows-auto grid-cols-1 grid-rows-[400px_1fr] gap-y-8 bg-black px-8 py-12 lg:grid-cols-2 lg:grid-rows-1 lg:gap-x-8 lg:py-28 xl:grid-cols-[45%_1fr_45%]">
+      <section className="grid auto-rows-auto grid-cols-1 grid-rows-[400px_1fr] gap-y-8 bg-black px-8 pt-12 lg:grid-cols-2 lg:grid-rows-1 lg:gap-x-8 lg:py-28 xl:grid-cols-[45%_1fr_45%]">
         <motion.div
           className="flex flex-col space-y-8 text-[#818181] xl:space-y-12 xl:self-center"
           variants={fade}
@@ -95,37 +82,32 @@ function MainPage() {
           initial="hiddenRight"
           whileInView="animate"
         >
-          <div className="flex flex-col gap-y-8">
-            <span className="flex h-full text-8xl lg:text-7xl xl:text-9xl">
-              5+
+          <div className="flex flex-col items-center gap-y-8 lg:col-span-2">
+            <span className="flex h-full self-center text-8xl lg:text-7xl xl:text-9xl">
+              3
             </span>
-            <p id="sub-text">Professional Trainers</p>
+            <p className="uppercase italic">Personal Trainers</p>
           </div>
-          <div className="flex flex-col gap-y-8">
-            <span className="flex h-full text-8xl lg:text-7xl xl:text-9xl">
-              10
+
+          <div className="flex flex-col items-center gap-y-8">
+            <span className="flex h-full self-center text-8xl lg:text-7xl xl:text-9xl">
+              2
             </span>
-            <p id="sub-text">Professional Trainers</p>
+            <p className="uppercase italic">Courts</p>
           </div>
-          <div className="flex flex-col gap-y-8">
-            <span className="flex h-full text-8xl lg:text-7xl xl:text-9xl">
-              10K+
+          <div className="flex flex-col items-center gap-y-8">
+            <span className="flex h-full self-center text-8xl lg:text-7xl xl:text-9xl">
+              3
             </span>
-            <p id="sub-text">Professional Trainers</p>
-          </div>
-          <div className="flex flex-col gap-y-8">
-            <span className="flex h-full text-8xl lg:text-7xl xl:text-9xl">
-              13k+
-            </span>
-            <p id="sub-text">Professional Trainers</p>
+            <p className="uppercase italic">Coaches</p>
           </div>
         </motion.div>
       </section>
 
       {/* <!-- section 3 --> */}
       <section className="flex flex-col lg:flex-row">
-        <div className="grid min-h-full place-items-center md:ml-8">
-          <div className="my-2 flex flex-col gap-y-8 text-center lg:text-left">
+        <div className=" grid min-h-full place-items-center py-8 md:ml-8">
+          <div className="flex flex-col gap-y-8 text-center lg:text-left">
             <span className="font-thin tracking-widest md:text-3xl">
               OUR STORY
             </span>
@@ -149,7 +131,7 @@ function MainPage() {
             autoPlay={true}
             muted={true}
             loop={true}
-            className="hidden lg:block"
+            className="hidden h-full lg:block"
           />
         </div>
       </section>
