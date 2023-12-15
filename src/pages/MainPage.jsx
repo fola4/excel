@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  video,
-  wImage01,
-  wImage02,
-  wImage03,
-  wImage04,
-  singleCork,
-  corkNet,
-} from "../assets/images";
+import { video, wImage03, wImage04, corkNet } from "../assets/images";
 import { Link } from "react-router-dom";
 import { teamMembers } from "../constants";
 import TeamMember from "../components/TeamMember";
@@ -117,11 +109,11 @@ function MainPage() {
               all abilities, providing coaching and family sessions.
             </h2>
 
-            <a href="./about us">
+            <Link to="/about us">
               <button className="rounded-3xl border border-black px-5 py-2 text-2xl text-black transition hover:bg-black  hover:text-white">
                 About Us
               </button>
-            </a>
+            </Link>
           </div>
         </div>
 
