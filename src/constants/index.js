@@ -1,26 +1,5 @@
 import { kidsPlaying, threeCourts, craig } from "../assets/images";
 
-export const cardPlans = [
-  {
-    name: "Standard",
-    price: "£4 | £8",
-    description:
-      "Standard fees. Students £4, Adults £8. Enroll now to unlock your potential with us.",
-  },
-  {
-    name: "Family Session",
-    price: "£8",
-    description:
-      "Unforgettable family sessions: Kids £8, Adults £8. Join us for quality bonding time and lasting memories.",
-  },
-  {
-    name: "Coached Session",
-    price: "£8 | £15",
-    description:
-      "Level up your game with expert-led coached sessions. Kids: £8, Adults: £15. Join us and reach new heights in badminton.",
-  },
-];
-
 export const aboutDescs = [
   {
     image: threeCourts,
@@ -100,8 +79,7 @@ export const pricing = [
   {
     name: "Standard",
     desc: "Casual individual badminton with court access during regular hours.",
-    price: 15,
-    kids: "£4",
+    kids: "£8",
     adults: "£8",
     features: [
       "Court access during regular hours.",
@@ -112,7 +90,6 @@ export const pricing = [
   {
     name: "Family Plan",
     desc: "Exclusive court access anytime, complimentary racket rentals for ultimate family fun.",
-    price: 30,
     kids: "£8",
     adults: "£8",
     features: [
@@ -124,7 +101,6 @@ export const pricing = [
   {
     name: "Coached Session",
     desc: "Personalized training from a pro coach for improved skills and family bonding.",
-    price: 45,
     kids: "£8",
     adults: "£15",
     features: [
