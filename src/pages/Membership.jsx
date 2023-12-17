@@ -119,7 +119,7 @@ function Membership() {
                   From: "adewaleakanni90@gmail.com",
                   Subject: "BadmintonExcel Membership Request",
                   Body: ebody,
-                }).then(() => alert("Details sent."));
+                }).then((message) => alert(message));
               }}
               id="submit"
               type="submit"
