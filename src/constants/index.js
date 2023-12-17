@@ -1,4 +1,9 @@
-import { kidsPlaying, threeCourts, craig } from "../assets/images";
+import {
+  kidsPlaying,
+  threeCourts,
+  vonracket,
+  placeholder,
+} from "../assets/images";
 
 export const aboutDescs = [
   {
@@ -23,28 +28,29 @@ export const aboutDescs = [
 
 export const teamMembers = [
   {
-    name: "Craig McKay",
-    image: craig,
+    name: "Von Oluwo",
+    image: vonracket,
   },
   {
-    name: "Mable Cross",
-    image: craig,
+    name: "Tushar Unalkat",
+    image: placeholder,
+    status: "coach",
   },
   {
-    name: "Chad Phelps",
-    image: craig,
+    name: "Grace Odusola",
+    image: placeholder,
   },
   {
-    name: "Jimmy Vargas",
-    image: craig,
+    name: "Gitesh Patel",
+    image: placeholder,
   },
   {
     name: "Gordon Santos",
-    image: craig,
+    image: placeholder,
   },
   {
     name: "Vera Jones",
-    image: craig,
+    image: placeholder,
   },
 ];
 
@@ -71,7 +77,7 @@ export const features = [
   "Strong Community Presence",
   "Welcoming Environment",
   "Professional Coaching",
-  "Family-Centric Focus",
+  "Family-Centric",
   "State-of-the-Art Facilities",
 ];
 

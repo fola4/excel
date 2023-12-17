@@ -2,13 +2,7 @@ import React from "react";
 import { teamMembers } from "../constants";
 import TeamMember from "../components/TeamMember";
 import Slideshow from "../components/Slider";
-import {
-  singleCork,
-  wImage01,
-  wImage02,
-  wImage03,
-  wImage04,
-} from "../assets/images";
+import { singleCork, wImage01, wImage02 } from "../assets/images";
 
 function Team() {
   let images = [wImage01, wImage02, singleCork];

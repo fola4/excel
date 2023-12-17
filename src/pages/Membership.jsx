@@ -32,7 +32,7 @@ function Membership() {
                   <p>(Ace) Feathers</p>
                 </div>
                 <div className="flex flex-col justify-center">
-                  <p>Sunday 3pm - 4:30pm </p>
+                  <p>Sunday 3pm - 5pm </p>
                   <p>(Family one) plastics/feathers</p>
                 </div>
               </div>
@@ -69,38 +69,59 @@ function Membership() {
             <p className="my-10 text-center text-5xl font-medium text-[hsla(0,0%,95%)]">
               Join Our Team
             </p>
-            <div className="grid grid-cols-1 grid-rows-4 gap-x-8 gap-y-5 md:grid-cols-2">
+            <div className="grid grid-cols-1 grid-rows-4 gap-x-8 gap-y-5">
               <input
+                id="fname"
                 type="text"
-                placeholder="Name"
+                placeholder="First Name"
                 className="border-b border-gray-400 bg-transparent py-3 text-xl font-extralight text-gray-200 outline-none placeholder:text-white"
               />
               <input
+                id="lname"
                 type="text"
-                placeholder="Surname"
+                placeholder="Last Name"
                 className="border-b border-gray-400 bg-transparent py-3 text-xl font-extralight text-gray-200 outline-none placeholder:text-white"
               />
               <input
+                id="email"
                 type="email"
                 placeholder="Email"
                 className="border-b border-gray-400 bg-transparent py-3 text-xl font-extralight text-gray-200 outline-none placeholder:text-white"
               />
               <input
-                type="search"
+                id="tele"
+                type="tel"
                 placeholder="Phone"
                 className="border-b border-gray-400 bg-transparent py-3 text-xl font-extralight text-gray-200 outline-none placeholder:text-white"
               />
-
-              <textarea
-                name="text"
-                id="text"
-                rows="5"
-                className="resize-none border-b border-gray-400 bg-transparent py-3 text-xl font-extralight text-gray-200 outline-none placeholder:text-white md:col-span-2 md:row-span-2"
-                placeholder="Your text"
-              ></textarea>
             </div>
-            /{" "}
+
             <input
+              onClick={(e) => {
+                e.preventDefault();
+                let fname = document.getElementById("fname");
+                let lname = document.getElementById("lname");
+                let email = document.getElementById("email");
+                let tele = document.getElementById("tele");
+
+                let ebody = `
+                  <b>Name: </b> ${lname.value.toUpperCase()}, ${fname.value}
+                  <br />
+                  <b>Email: </b> ${email.value}
+                  <br />
+                  <b>Tele: </b> ${tele.value}
+                  <br />
+                `;
+
+                Email.send({
+                  SecureToken: "1947e88c-233d-4690-a349-0c427198853f",
+                  To: "ukpaimunachi2003@gmail.com",
+                  From: "adewaleakanni90@gmail.com",
+                  Subject: "BadmintonExcel Membership Request",
+                  Body: ebody,
+                }).then(() => alert("Details sent."));
+              }}
+              id="submit"
               type="submit"
               className="mt-8 w-full cursor-pointer rounded-full border border-transparent bg-black py-3 text-center text-2xl font-normal text-[hsl(0,0%,95%)] transition hover:bg-white hover:text-[#000]"
             />

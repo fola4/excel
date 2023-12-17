@@ -18,6 +18,9 @@ import wImage01 from "./wImage-01.jpg";
 import wImage02 from "./wImage-02.jpg";
 import wImage03 from "./wImage-03.jpg";
 import wImage04 from "./wImage-04.jpg";
+import lordvon from "./mrvon.jpg";
+import vonracket from "./vonracket.jpeg";
+import placeholder from "./placeholder.jpeg";
 
 export {
   oldRacketCork,
@@ -40,4 +43,7 @@ export {
   wImage02,
   wImage03,
   wImage04,
+  lordvon,
+  vonracket,
+  placeholder,
 };
