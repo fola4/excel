@@ -24,7 +24,7 @@ function Membership() {
                   <p className=" font-bold uppercase italic ">
                     Our club nights
                   </p>
-                  <p>Tuesday 8:40pm - 10:00pm</p>
+                  <p>Tuesday 8:30pm - 10:00pm</p>
                   <p>(Rocket) feathers</p>
                 </div>
                 <div className="flex flex-col justify-center">

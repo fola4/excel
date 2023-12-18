@@ -32,6 +32,20 @@ const container = {
   },
 };
 
+const variants = {
+  hidden: {
+    opacity: 0,
+    x: -200,
+  },
+  animate: (delay) => ({
+    opacity: 1,
+    x: 0,
+    transition: {
+      delay: delay * 0.2,
+    },
+  }),
+};
+
 function MainPage() {
   let images = [corkNet, wImage03, wImage04];
 
@@ -74,25 +88,52 @@ function MainPage() {
           initial="hiddenRight"
           whileInView="animate"
         >
-          <div className="flex flex-col items-center gap-y-8 lg:col-span-2">
+          <motion.div
+            className="flex flex-col items-center gap-y-8 lg:col-span-2"
+            variants={variants}
+            initial="hidden"
+            whileInView="animate"
+            custom={0}
+            viewport={{
+              once: true,
+            }}
+          >
             <span className="flex h-full self-center text-8xl lg:text-7xl xl:text-9xl">
               3
             </span>
             <p className="uppercase italic">Personal Trainers</p>
-          </div>
+          </motion.div>
 
-          <div className="flex flex-col items-center gap-y-8">
+          <motion.div
+            className="flex flex-col items-center gap-y-8"
+            variants={variants}
+            initial="hidden"
+            whileInView="animate"
+            custom={1}
+            viewport={{
+              once: true,
+            }}
+          >
             <span className="flex h-full self-center text-8xl lg:text-7xl xl:text-9xl">
               2
             </span>
             <p className="uppercase italic">Courts</p>
-          </div>
-          <div className="flex flex-col items-center gap-y-8">
+          </motion.div>
+          <motion.div
+            className="flex flex-col items-center gap-y-8"
+            variants={variants}
+            initial="hidden"
+            whileInView="animate"
+            custom={2}
+            viewport={{
+              once: true,
+            }}
+          >
             <span className="flex h-full self-center text-8xl lg:text-7xl xl:text-9xl">
               3
             </span>
             <p className="uppercase italic">Coaches</p>
-          </div>
+          </motion.div>
         </motion.div>
       </section>
 

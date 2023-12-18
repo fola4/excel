@@ -11,13 +11,6 @@ const Slideshow = ({ images, interval = 3000, page }) => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
 
-  // Function to go to the previous slide
-  const prevSlide = () => {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + images.length) % images.length
-    );
-  };
-
   // Automatically advance to the next slide at the specified interval
   useEffect(() => {
     const intervalId = setInterval(nextSlide, interval);
@@ -67,7 +60,7 @@ const Slideshow = ({ images, interval = 3000, page }) => {
             </div>
           </div>
         ) : (
-          <div className="absolute left-0 top-0 z-20 -ml-8 grid h-full w-full place-items-center">
+          <div className="absolute right-0 top-0 z-20 -ml-8 grid h-full w-full place-items-center">
             <h1 className="text-center text-5xl font-thin uppercase text-white md:text-[15rem]">
               Our Team
             </h1>

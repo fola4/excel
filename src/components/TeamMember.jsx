@@ -27,8 +27,13 @@ function TeamMember({ name, image, index }) {
         once: true,
       }}
     >
-      <p className="absolute bottom-5 left-5 text-2xl text-white ">{name}</p>
-      <img src={image} alt="team-member" />
+      <p
+        className={`absolute bottom-5 left-5 z-20 text-2xl font-bold text-white`}
+      >
+        {name}
+      </p>
+      <img src={image} alt="team-member" className={`w-full object-cover`} />
+      <div className="absolute left-0 top-0 h-full w-full bg-black bg-opacity-30" />
     </motion.div>
   );
 }
