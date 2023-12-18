@@ -1,5 +1,4 @@
 import oldRacketCork from "./aboodi-vesakaran-o_xuF7GXKNQ-unsplash.jpg";
-import craig from "./craig-mckay-jmURdhtm7Ng-unsplash.jpg";
 import threeCourts from "./dean-ricciardi-ds9TW9HCpew-unsplash.jpg";
 import grassCourt from "./grass-sport-tennis-ball-design-lawn-green-color-generative-ai.jpg";
 import kidsPlaying from "./kids-playing-badminton-beautiful-summer-day.jpg";
@@ -24,7 +23,6 @@ import placeholder from "./placeholder.jpeg";
 
 export {
   oldRacketCork,
-  craig,
   threeCourts,
   grassCourt,
   kidsPlaying,
