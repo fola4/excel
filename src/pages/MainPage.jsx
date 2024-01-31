@@ -1,130 +1,218 @@
-import React from 'react';
-import { craig, video } from '../assets/images'
-import Navbar from '../components/Navbar';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { video, wImage03, wImage04, corkNet } from "../assets/images";
+import { Link } from "react-router-dom";
+import { teamMembers } from "../constants";
+import TeamMember from "../components/TeamMember";
+import { motion } from "framer-motion";
+import Slideshow from "../components/Slider";
+
+const fade = {
+  hiddenLeft: {
+    x: "-30vw",
+    opacity: 0,
+  },
+  hiddenRight: {
+    x: "30vw",
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: { duration: 1, when: "beforeChildren" },
+  },
+};
+
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 5,
+    },
+  },
+};
+
+const variants = {
+  hidden: {
+    opacity: 0,
+    x: -200,
+  },
+  animate: (delay) => ({
+    opacity: 1,
+    x: 0,
+    transition: {
+      delay: delay * 0.2,
+    },
+  }),
+};
 
 function MainPage() {
+  let images = [corkNet, wImage03, wImage04];
+
   return (
     <div>
-      <header>
-        <Navbar />
-        
-        {/* <!-- content --> */}
-        <div className="content">
-          <h1 className='text-[2em]'>
-            Being good at Badminton <br /> is everything.
-          </h1>
-
-          <div className="hero1">
-            <div>Study</div>
-            <div className="dot-block"></div>
-            <div>Practice</div>
-            <div className="dot-block"></div>
-            <div>Play</div>
-            <div className="dot-block"></div>
-            <div>Win</div>
-          </div>
-
-          <button className="button">
-            <Link to="/membership" className="btn1">Join Us Now</Link>
-          </button>
-        </div>
+      <header id="main-page" className="px-0">
+        <Slideshow images={images} page={"main"} />
       </header>
 
       {/* <!-- section 2 --> */}
-      <section id="black-background">
-        <div className="texts">
-          <h1 id="head">LEADING #1 BADMINTON CENTRE</h1>
+      <section className="grid auto-rows-auto grid-cols-1 grid-rows-[400px_1fr] gap-y-8 bg-black px-8 pt-12 lg:grid-cols-2 lg:grid-rows-1 lg:gap-x-8 lg:py-28 xl:grid-cols-[45%_1fr_45%]">
+        <motion.div
+          className="flex flex-col space-y-8 text-[#818181] xl:space-y-12 xl:self-center"
+          variants={fade}
+          initial="hiddenLeft"
+          whileInView="animate"
+        >
+          <h1 className="text-center font-medium tracking-widest lg:text-left lg:text-xl">
+            LEADING #1 BADMINTON CENTRE
+          </h1>
+
           <hr />
-          <p  id="text-content">
-            We are a mixed bunch of friendly, social badminton fans based in the borough of Barnet, North London. Everyone is welcome to our club regardless of age, gender, capacity or abilities.
+
+          <p className="text-center font-light lg:text-left lg:text-xl">
+            We are a mixed bunch of friendly, social badminton fans based in the
+            borough of Barnet, North London. Everyone is welcome to our club
+            regardless of age, gender, capacity or abilities.
           </p>
-          <button className="btn2">
-            <Link href="/membership" >Get In Touch</Link>
-          </button>
-        </div>
-        <div id="stats">
-          <div data-aos="fade-left">
-            <div>
-              <span className="num">5+</span>
-              <p id="sub-text">Professional Trainers</p>
-            </div>
-            <div>
-              <span className="num">10K+</span>
-              <p id="sub-text">Professional Trainers</p>
-            </div>
-          </div>
-          <div>
-            <div>
-              <span className="num">10</span>
-              <p id="sub-text">Professional Trainers</p>
-            </div>
-            <div>
-              <span className="num">13k+</span>
-              <p id="sub-text">Professional Trainers</p>
-            </div>
-          </div>
-        
-        </div>
+
+          <Link to="/membership" className="self-center lg:self-start">
+            <button className="rounded-[40px] border border-white px-8 py-1 capitalize text-white hover:bg-white hover:text-black">
+              get in touch
+            </button>
+          </Link>
+        </motion.div>
+
+        <motion.div
+          className="max-width grid grid-cols-2 grid-rows-2 gap-12 text-white xl:col-start-3"
+          variants={fade}
+          initial="hiddenRight"
+          whileInView="animate"
+        >
+          <motion.div
+            className="flex flex-col items-center gap-y-8 lg:col-span-2"
+            variants={variants}
+            initial="hidden"
+            whileInView="animate"
+            custom={0}
+            viewport={{
+              once: true,
+            }}
+          >
+            <span className="flex h-full self-center text-8xl lg:text-7xl xl:text-9xl">
+              3
+            </span>
+            <p className="uppercase italic">Personal Trainers</p>
+          </motion.div>
+
+          <motion.div
+            className="flex flex-col items-center gap-y-8"
+            variants={variants}
+            initial="hidden"
+            whileInView="animate"
+            custom={1}
+            viewport={{
+              once: true,
+            }}
+          >
+            <span className="flex h-full self-center text-8xl lg:text-7xl xl:text-9xl">
+              2
+            </span>
+            <p className="uppercase italic">Courts</p>
+          </motion.div>
+          <motion.div
+            className="flex flex-col items-center gap-y-8"
+            variants={variants}
+            initial="hidden"
+            whileInView="animate"
+            custom={2}
+            viewport={{
+              once: true,
+            }}
+          >
+            <span className="flex h-full self-center text-8xl lg:text-7xl xl:text-9xl">
+              3
+            </span>
+            <p className="uppercase italic">Coaches</p>
+          </motion.div>
+        </motion.div>
       </section>
 
       {/* <!-- section 3 --> */}
-      <section id="white-background">
+      <section className="flex flex-col lg:flex-row">
+        <div className=" grid min-h-full place-items-center py-8 md:ml-8">
+          <div className="flex flex-col gap-y-8 text-center lg:text-left">
+            <span className="font-thin tracking-widest md:text-3xl">
+              OUR STORY
+            </span>
+
+            <h2 className="font-bold lg:text-3xl lg:tracking-widest">
+              Founded by diverse badminton fans in Barnet, London, We welcome
+              all abilities, providing coaching and family sessions.
+            </h2>
+
+            <Link to="/about us">
+              <button className="rounded-3xl border border-black px-5 py-2 text-2xl text-black transition hover:bg-black  hover:text-white">
+                About Us
+              </button>
+            </Link>
+          </div>
+        </div>
+
         <div>
-          <span>OUR STORY</span>
-
-          <h2 className='font-bold'>
-            Founded by diverse badminton fans in Barnet, London, We welcomes all abilities, providing coaching and family sessions.
-          </h2>
-          
-          <Link href="/about">
-            <button className="btn3 border-black text-black hover:bg-black hover:text-white">
-              About Us
-            </button>
-          </Link>
+          <video
+            src={video}
+            autoPlay={true}
+            muted={true}
+            loop={true}
+            className="hidden h-full lg:block"
+          />
         </div>
-        <div id="image">
-          <video src={video} autoPlay muted loop className="video"></video>
-        </div>
-
       </section>
 
       {/* <!-- section 4 --> */}
-      <section className='black-background2 py-10 px-20'>
-        <div id="white" className='flex justify-between py-20'>
-          <span>OUR TEAM</span>
-          <p className="white-texts">Grow your skill with<br />our team</p>
+      <section className="bg-black px-20 py-10">
+        <div className="flex flex-col items-center py-20 text-white md:flex-row md:justify-between">
+          <span className="whitespace-nowrap text-4xl font-extralight tracking-widest">
+            OUR TEAM
+          </span>
+          <p className="whitespace-nowrap md:text-2xl lg:text-4xl">
+            Grow your skill with our team
+          </p>
         </div>
 
-        <div id="white" className='flex justify-between grid-cols-1 md:grid-cols-2 lg:grid-cols-4'>
-          <div>
-            <img src={craig} alt="" className="imges" />
-            <p className="image-text">Anderson Mike</p>
-          </div>
-          <div>
-            <img src={craig} alt="" className="imges" />
-            <p className="image-text">Anderson Mike</p>
-          </div>
-          <div>
-            <img src={craig} alt="" className="imges" />
-            <p className="image-text">Anderson Mike</p>
-          </div>
-          <div>
-            <img src={craig} alt="" className="imges" />
-            <p className="image-text">Anderson Mike</p>
-          </div>
-        </div>
+        <motion.div
+          className="grid gap-x-12 gap-y-12 overflow-y-hidden md:grid-cols-2 lg:grid-cols-4"
+          variants={container}
+          initial="hidden"
+          animate="show"
+        >
+          {teamMembers.slice(0, 4).map((member, index) => (
+            <TeamMember
+              key={index}
+              index={index}
+              name={member.name}
+              image={member.image}
+            />
+          ))}
+        </motion.div>
       </section>
 
       {/* <!-- section 5 --> */}
-      <article>
-        <h3>
-          "When you play badminton, play with passion, play with heart, and leave everything on the court."
+      <article className="group relative px-4 py-16">
+        <i className="fa-solid fa-quote-left absolute left-0 top-0 text-[10rem] text-black opacity-20 duration-1000 group-hover:rotate-[720deg] group-hover:scale-125 md:text-[10rem] lg:text-[15rem]" />
+        <i className="fa-solid fa-quote-right absolute bottom-0 right-0 text-[10rem] text-black opacity-20 duration-1000 group-hover:rotate-[-720deg] group-hover:scale-125 md:text-[10rem] lg:text-[15rem]"></i>
+
+        <h3 className="text-center text-5xl font-light leading-[1.1] md:text-6xl lg:px-6 lg:text-8xl lg:leading-[1.35]">
+          "When you play badminton, play with{" "}
+          <span className="text-red-500">passion</span>, play with{" "}
+          <span className="text-red-500">heart</span>, and leave{" "}
+          <span className="text-red-500">everything</span> on the court."
         </h3>
-        <hr />
-        <p id="quotes">- Gail Emms</p>
+
+        <hr className="my-8 border-black" />
+
+        <p className="italic lg:pt-8 lg:text-2xl">- Gail Emms</p>
       </article>
-            
     </div>
   );
 }
