@@ -35,7 +35,7 @@ function Membership() {
             </h2>
             <p className="border-b border-gray-400 py-8 text-2xl font-thin">
               Ready to experience the excitement of badminton?<br></br>Let us
-              help you become even greater at what you do . Get in touch now and
+              help you become even greater at what you do. Get in touch now and
               unleash your potential on the court!
             </p>
 
@@ -43,12 +43,8 @@ function Membership() {
               <div className="text-md self-center md:self-start">
                 <div className="flex flex-col justify-center">
                   <p className="text-center font-bold uppercase italic">
-                    Our club nights
-                  </p>
-                  <p className="text-center">
-                    It would be awesome to have your son join our badminton
-                    sessions. Here are the timings
-                  </p>
+                    Our Badminton Sessions
+                  </p> 
                   <p className="text-center">Tuesdays: 20:20 - 22:00</p>
                   <p className="text-center">(Rocket) Feathers</p>
                 </div>
