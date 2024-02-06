@@ -5,7 +5,7 @@ import { close, menu, logo } from "../assets/images";
 import MobileLinks from "./MobileLinks";
 
 function Navbar() {
-  const links = ["Home", "Our Team", "Membership", "About Us"];
+  const links = ["Home", "Membership", "About Us", "Gallery"];
 
   const [menuOpen, setMenuOpen] = useState(false);
 

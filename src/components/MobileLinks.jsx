@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function MobileLinks({ menuOpen, setMenuOpen }) {
-  const links = ["Home", "Our Team", "Membership", "About Us"];
+  const links = ["Home", "Membership", "About Us", "Gallery"];
 
   return (
     <div

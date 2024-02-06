@@ -29,7 +29,7 @@ export const aboutDescs = [
 export const teamMembers = [
   {
     name: "Von Oluwo",
-    image: vonracket,
+    image: placeholder,
   },
   {
     name: "Tushar Unalkat",
