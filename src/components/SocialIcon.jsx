@@ -1,9 +1,9 @@
 import React from "react";
 
-function SocialIcon({ color, name, animation }) {
+function SocialIcon({ color, name, animation, link }) {
   return (
     <li>
-      <a href="#" className="flex items-center text-4xl">
+      <a href={`${link}`} className="flex items-center text-4xl">
         <i
           className={`fa-brands fa-${name.toLowerCase()} lg:mr-2 ${animation}`}
           style={{ color: `${color}` }}

@@ -59,16 +59,19 @@ export const socialIcons = [
     name: "Instagram",
     color: "rgb(220 38 38)",
     animation: "fa-beat",
+    link: "#",
   },
   {
     name: "Facebook",
     color: "#1877f2",
     animation: "fa-shake",
+    link: "https://www.facebook.com/profile.php?id=61555715197256",
   },
   {
     name: "Twitter",
     color: "#1da1f2",
     animation: "fa-bounce",
+    link: "#",
   },
 ];
 

@@ -66,6 +66,7 @@ function Footer() {
               color={icon.color}
               name={icon.name}
               key={icon.name}
+              link={icon.link}
             />
           ))}
         </ul>
