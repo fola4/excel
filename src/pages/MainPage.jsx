@@ -69,10 +69,13 @@ function MainPage() {
 
           <hr />
 
-          <p className="text-center font-light lg:text-left lg:text-xl">
+          <p className="text-center font-light text-white lg:text-left lg:text-xl">
             We are a mixed bunch of friendly, social badminton fans based in the
             borough of Barnet, North London. Everyone is welcome to our club
-            regardless of age, gender, capacity or abilities.
+            regardless of age, gender, capacity or abilities. We're all about
+            getting fitter and honing those badminton skills. It's a fantastic
+            way to stay in shape while having a blast on the court. Your energy
+            and enthusiasm would be an awesome addition to our sessions.
           </p>
 
           <Link to="/membership" className="self-center lg:self-start">
