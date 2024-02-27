@@ -11,13 +11,13 @@ export default function About() {
         <div className=" absolute left-0 top-0 h-full w-full bg-black opacity-60" />
 
         {/* <!-- content --> */}
-        <div className="relative z-20 flex flex-col items-center space-y-3 self-center justify-self-center text-center text-4xl capitalize text-white">
-          <h1 className="md:text-6xl lg:w-2/3">
+        <div className="relative z-20 flex flex-col items-center space-y-3 self-center justify-self-center text-center text-4xl text-white">
+          <h1 className="md:text-6xl lg:w-2/3 capitalize">
             At BadmintonExcel, we develop your hidden skills, stamina and
             fitness.
           </h1>
 
-          <p className="mt-8 text-lg italic text-red-100 md:text-2xl lg:w-1/2">
+          <p className="mt-8 italic text-red-100 md:text-2xl lg:w-1/2">
             We have been successful in using badminton as one of the tools for a
             healthy weight loss programme in line with our lifestyle coach. You
             can play as intensely as you wish or as moderately as you desire.

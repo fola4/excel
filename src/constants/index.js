@@ -59,7 +59,7 @@ export const socialIcons = [
     name: "Instagram",
     color: "rgb(220 38 38)",
     animation: "fa-beat",
-    link: "#",
+    link: "https://www.instagram.com/badmintonexcel1",
   },
   {
     name: "Facebook",
@@ -68,10 +68,10 @@ export const socialIcons = [
     link: "https://www.facebook.com/profile.php?id=61555715197256",
   },
   {
-    name: "Twitter",
-    color: "#1da1f2",
+    name: "Tiktok",
+    color: "#fff",
     animation: "fa-bounce",
-    link: "#",
+    link: "https://www.tiktok.com/@badmintonexcel",
   },
 ];
 
@@ -131,13 +131,13 @@ export const aboutUs = [
     letter: "X",
     name: "Xtreme fitness",
     description:
-      "Our training programme focus on building stamina, agility as well as weight loss and endurance ensuring you stay at the top of your game.",
+      "Our training programme focuses on building stamina, agility as well as weight loss and endurance ensuring you stay at the top of your game.",
   },
   {
     letter: "C",
     name: "Continous Development",
     description:
-      "Encourage players to push their boundaries and reach new heights in their badminton journey.",
+      "Our coaching sessions encourage players to push their boundaries and reach new heights in their badminton journey",
   },
 
   {
@@ -150,6 +150,6 @@ export const aboutUs = [
     letter: "L",
     name: "Lifelong friendship",
     description:
-      "Connect with like-minded badminton enthusiasts and be part of a supportive community that shares the passion for sport.",
+      "Our sessions offer the opportunity to connect with likeminded badminton enthusiasts and be part of a supportive community that shares the passion for sports.",
   },
 ];
