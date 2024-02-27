@@ -43,7 +43,7 @@ const Slideshow = ({ images, interval = 3000, page }) => {
               </h1>
 
               <div className="flex items-center gap-x-2 self-center text-white md:text-2xl lg:gap-x-5 lg:text-3xl">
-                <div>Study</div>
+                <div>Learn</div>
                 <div className="dot-block"></div>
                 <div>Practice</div>
                 <div className="dot-block"></div>
@@ -62,7 +62,7 @@ const Slideshow = ({ images, interval = 3000, page }) => {
         ) : (
           <div className="absolute right-0 top-0 z-20 -ml-8 grid h-full w-full place-items-center">
             <h1 className="text-center text-5xl font-thin uppercase text-white md:text-[15rem]">
-              Our Team
+              Gallery
             </h1>
           </div>
         )}

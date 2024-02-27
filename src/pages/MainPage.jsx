@@ -206,16 +206,13 @@ function MainPage() {
         <i className="fa-solid fa-quote-right absolute bottom-0 right-0 text-[10rem] text-black opacity-20 duration-1000 group-hover:rotate-[-720deg] group-hover:scale-125 md:text-[10rem] lg:text-[15rem]"></i>
 
         <h3 className="text-center text-5xl font-light leading-[1.1] md:text-6xl lg:px-6 lg:text-8xl lg:leading-[1.35]">
-          "Badminton is like ballet dancing. It requires a lot of{" "}
-          <span className="text-red-500">control</span>, strength,{" "}
-          <span className="text-red-500">mind play</span> and measured move
-          <span className="text-red-500">ment</span>."
+          "Those who play <span className="text-red-500">badminton</span> well, take <span className="text-red-500">decisions</span> quickly."
         </h3>
 
         <hr className="my-8 border-black" />
 
         <p className="text-center text-lg italic lg:pt-8 lg:text-2xl">
-          - Aamir Khan
+          - Dmitry Medvedev
         </p>
       </article>
     </div>
