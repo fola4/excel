@@ -37,7 +37,7 @@ const Slideshow = ({ images, interval = 3000, page }) => {
         {page == "main" ? (
           <div className="absolute grid h-full">
             <div className="flex flex-col gap-y-8 self-center">
-              <h1 className="text-center text-4xl font-normal tracking-widest text-white sm:text-5xl md:text-8xl lg:text-9xl">
+              <h1 className="text-center text-5xl font-normal tracking-widest text-white sm:text-5xl md:text-8xl lg:text-9xl">
                 Being good at Badminton{" "}
                 <span className="whitespace-nowrap">is everything.</span>
               </h1>

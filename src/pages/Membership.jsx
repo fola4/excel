@@ -132,7 +132,7 @@ function Membership() {
 								placeholder="Phone"
 								className="border-b border-gray-400 bg-transparent py-3 text-xl font-extralight text-gray-200 outline-none placeholder:text-white"
 							/>
-							<textarea id="extra" className='border-b border-gray-400 bg-transparent py-3 text-xl font-extralight text-gray-200 outline-none placeholder:text-white' placeholder='Message'></textarea>
+							<textarea id="extra" className='border-b border-gray-400 bg-transparent py-3 text-xl font-extralight text-gray-200 outline-none placeholder:text-white' rows={5} placeholder='Message'></textarea>
 						</div>
 
 						<input
