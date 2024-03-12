@@ -103,46 +103,24 @@ function Membership() {
 						</div>
 					</div>
 
-					<form className="order-1 rounded-xl bg-[hsla(0,0%,99%,.1)] px-8 pb-10 pt-5 lg:order-3">
-						<p className="my-10 text-center text-5xl font-medium text-[hsla(0,0%,95%)]">
-							Join Our Team
-						</p>
-						<div className="grid grid-cols-1 grid-rows-4 gap-x-8 gap-y-5">
-							<input
-								id="fname"
-								type="text"
-								placeholder="First Name"
-								className="border-b border-gray-400 bg-transparent py-3 text-xl font-extralight text-gray-200 outline-none placeholder:text-white"
-							/>
-							<input
-								id="lname"
-								type="text"
-								placeholder="Last Name"
-								className="border-b border-gray-400 bg-transparent py-3 text-xl font-extralight text-gray-200 outline-none placeholder:text-white"
-							/>
-							<input
-								id="email"
-								type="email"
-								placeholder="Email"
-								className="border-b border-gray-400 bg-transparent py-3 text-xl font-extralight text-gray-200 outline-none placeholder:text-white"
-							/>
-							<input
-								id="tele"
-								type="tel"
-								placeholder="Phone"
-								className="border-b border-gray-400 bg-transparent py-3 text-xl font-extralight text-gray-200 outline-none placeholder:text-white"
-							/>
-							<textarea id="extra" className='border-b border-gray-400 bg-transparent py-3 text-xl font-extralight text-gray-200 outline-none placeholder:text-white' rows={5} placeholder='Message'></textarea>
-						</div>
-
-						<input
-							onClick={(e) => {
+					<form className="order-1 rounded-xl bg-[hsla(0,0%,99%,.1)] px-8 pb-10 pt-5 lg:order-3" onSubmit={(e) => {
 								e.preventDefault();
 								let fname = document.getElementById('fname');
 								let lname = document.getElementById('lname');
 								let email = document.getElementById('email');
+								/**
+								 * @type HTMLInputElement
+								 */
 								let tele = document.getElementById('tele');
 								let msg = document.getElementById('extra');
+
+								const match  = tele.value.match(/^(?:\+[1-9]\d{1,2})?[ -]?\(?\d{3}\)?[ -]?\d{3}[ -]?\d{4}$/);
+								console.log(match);
+
+								if (!match) {
+									alert("Invalid phone number");
+									return;
+								}
 
 								let ebody = `
                   <b>Name: </b> ${lname.value.toUpperCase()}, ${fname.value}
@@ -154,15 +132,45 @@ function Membership() {
 									<b>Message: ${msg.value}</b>
                 `;
 
-								// Email.send({
-								//   SecureToken: "1947e88c-233d-4690-a349-0c427198853f",
-								//   To: "adeojopeter@gmail.com",
-								//   From: "adewaleakanni90@gmail.com",
-								//   Subject: "BadmintonExcel Membership Request",
-								//   Body: ebody,
-								// }).then((message) => alert(message));
 								sendEmail(ebody);
-							}}
+							}}>
+						<p className="my-10 text-center text-5xl font-medium text-[hsla(0,0%,95%)]">
+							Join Our Team
+						</p>
+						<div className="grid grid-cols-1 grid-rows-4 gap-x-8 gap-y-5">
+							<input
+								id="fname"
+								type="text"
+								placeholder="First Name"
+								className="border-b border-gray-400 bg-transparent py-3 text-xl font-extralight text-gray-200 outline-none placeholder:text-white"
+								required={true}
+							/>
+							<input
+								id="lname"
+								type="text"
+								placeholder="Last Name"
+								className="border-b border-gray-400 bg-transparent py-3 text-xl font-extralight text-gray-200 outline-none placeholder:text-white"
+								required={true}
+							/>
+							<input
+								id="email"
+								type="email"
+								placeholder="Email"
+								className="border-b border-gray-400 bg-transparent py-3 text-xl font-extralight text-gray-200 outline-none placeholder:text-white"
+								required={true}
+							/>
+							<input
+								id="tele"
+								type="tel"
+								placeholder="Phone"
+								className="border-b border-gray-400 bg-transparent py-3 text-xl font-extralight text-gray-200 outline-none placeholder:text-white"
+								required={true}
+							/>
+							<textarea id="extra" className='border-b border-gray-400 bg-transparent py-3 text-xl font-extralight text-gray-200 outline-none placeholder:text-white' rows={5} placeholder='Message'></textarea>
+						</div>
+
+						<input
+							// onClick={}
 							id="submit"
 							type="submit"
 							className="mt-8 w-full cursor-pointer rounded-full border border-transparent bg-black py-3 text-center text-2xl font-normal text-[hsl(0,0%,95%)] transition hover:bg-white hover:text-[#000]"
