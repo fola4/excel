@@ -25,7 +25,7 @@ function Membership() {
 				},
 				'6f7b8451-0724-492d-af75-a8da0e2b108f'
 			);
-			alert('Ok');
+			alert('Message Request Sent');
 		} catch (error) {
 			Laas.sendLog(
 				{
