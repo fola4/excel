@@ -32,6 +32,7 @@ const router = createBrowserRouter(
 			<Route path="gallery" element={<Team />} />
 			<Route path="membership" element={<Membership />} />
 			<Route path="about us" element={<About />} />
+			<Route path="thank-you" element={<About />} />
 		</Route>
 	)
 );

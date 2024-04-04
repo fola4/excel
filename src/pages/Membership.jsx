@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import Laas from '@peteradeojo/laas-sdk';
+import ThankYou from './ThankYou';
 
 function Membership() {
+	const [done, setDone] = useState(false);
+
 	const sendEmail = async (message) => {
 		try {
 			await fetch('https://fola-emailer.up.railway.app', {
@@ -25,7 +28,11 @@ function Membership() {
 				},
 				'6f7b8451-0724-492d-af75-a8da0e2b108f'
 			);
-			alert('Message Request Sent');
+			// alert('Ok');
+			setDone(true);
+			setTimeout(() => {
+				setDone(false);
+			}, 3000);
 		} catch (error) {
 			Laas.sendLog(
 				{
@@ -41,6 +48,7 @@ function Membership() {
 
 	return (
 		<div>
+			{done ? <ThankYou setOpen={setDone} /> : null}
 			<header id="membership">
 				<div className=" absolute left-0 top-0 h-full w-full bg-black opacity-75"></div>
 
@@ -103,26 +111,30 @@ function Membership() {
 						</div>
 					</div>
 
-					<form className="order-1 rounded-xl bg-[hsla(0,0%,99%,.1)] px-8 pb-10 pt-5 lg:order-3" onSubmit={(e) => {
-								e.preventDefault();
-								let fname = document.getElementById('fname');
-								let lname = document.getElementById('lname');
-								let email = document.getElementById('email');
-								/**
-								 * @type HTMLInputElement
-								 */
-								let tele = document.getElementById('tele');
-								let msg = document.getElementById('extra');
+					<form
+						className="order-1 rounded-xl bg-[hsla(0,0%,99%,.1)] px-8 pb-10 pt-5 lg:order-3"
+						id="membershipForm"
+						onSubmit={async (e) => {
+							e.preventDefault();
+							let fname = document.getElementById('fname');
+							let lname = document.getElementById('lname');
+							let email = document.getElementById('email');
+							/**
+							 * @type HTMLInputElement
+							 */
+							let tele = document.getElementById('tele');
+							let msg = document.getElementById('extra');
 
-								const match  = tele.value.match(/^(?:\+[1-9]\d{1,2})?[ -]?\(?\d{3}\)?[ -]?\d{3}[ -]?\d{4}$/);
-								console.log(match);
+							const match = tele.value.match(
+								/^(?:\+[1-9]\d{1,2})?[ -]?\(?\d{3}\)?[ -]?\d{3}[ -]?\d{4}$/
+							);
 
-								if (!match) {
-									alert("Invalid phone number");
-									return;
-								}
+							if (!match) {
+								alert('Invalid phone number');
+								return;
+							}
 
-								let ebody = `
+							let ebody = `
                   <b>Name: </b> ${lname.value.toUpperCase()}, ${fname.value}
                   <br />
                   <b>Email: </b> ${email.value}
@@ -132,8 +144,10 @@ function Membership() {
 									<b>Message: ${msg.value}</b>
                 `;
 
-								sendEmail(ebody);
-							}}>
+							await sendEmail(ebody);
+							document.getElementById('membershipForm').reset();
+						}}
+					>
 						<p className="my-10 text-center text-5xl font-medium text-[hsla(0,0%,95%)]">
 							Join Our Team
 						</p>
@@ -166,7 +180,12 @@ function Membership() {
 								className="border-b border-gray-400 bg-transparent py-3 text-xl font-extralight text-gray-200 outline-none placeholder:text-white"
 								required={true}
 							/>
-							<textarea id="extra" className='border-b border-gray-400 bg-transparent py-3 text-xl font-extralight text-gray-200 outline-none placeholder:text-white' rows={5} placeholder='Message'></textarea>
+							<textarea
+								id="extra"
+								className="border-b border-gray-400 bg-transparent py-3 text-xl font-extralight text-gray-200 outline-none placeholder:text-white"
+								rows={5}
+								placeholder="Message"
+							></textarea>
 						</div>
 
 						<input
