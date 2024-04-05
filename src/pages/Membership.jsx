@@ -105,7 +105,7 @@ function Membership() {
 										className="fa-sharp fa-solid fa-envelope mr-2"
 										style={{ color: '#818181' }}
 									></i>
-									info@badmintonexcel.com
+									<a href="mailto:info@badmintonexcel.com">info@badmintonexcel.com</a>
 								</p>
 							</div>
 						</div>
