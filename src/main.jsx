@@ -1,8 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-// Muna is back in this ish.
-
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -16,6 +14,7 @@ import Membership from "./pages/Membership.jsx";
 import About from "./pages/About.jsx";
 import App from "./layout/App.jsx";
 import "./index.css";
+import ThankYou from "./pages/ThankYou.jsx";
 
 const breakpoints = {
   mobile: 320,
@@ -34,13 +33,13 @@ const router = createBrowserRouter(
       <Route path="gallery" element={<Team />} />
       <Route path="membership" element={<Membership />} />
       <Route path="about us" element={<About />} />
-      <Route path="thank-you" element={<About />} />
-    </Route>
-  )
+      <Route path="thank-you" element={<ThankYou />} />
+    </Route>,
+  ),
 );
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>
+  </React.StrictMode>,
 );
