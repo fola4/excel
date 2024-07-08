@@ -100,8 +100,8 @@ export const pricing = [
   {
     name: "Family Plan",
     desc: "Exclusive court access anytime, complimentary racket rentals for ultimate family fun.",
-    kids: "£10",
-    adults: "£10",
+    kids: "£12",
+    adults: "£12",
     features: [
       "Exclusive and unlimited parents and kids court access.",
       "Flexible playing hours.",
@@ -111,8 +111,8 @@ export const pricing = [
   {
     name: "Coached Session",
     desc: "Personalized training from a pro coach for improved skills and family bonding.",
-    kids: "£10",
-    adults: "£10",
+    kids: "£12",
+    adults: "£12",
     features: [
       "Personalized training with coach.",
       "Focus on techniques and tactics.",
