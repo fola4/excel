@@ -86,11 +86,12 @@ export const features = [
 
 export const pricing = [
   {
-    name: "Standard",
+    name: "Ad hoc Session",
     desc: "Casual individual badminton with court access during regular hours.",
-    kids: "£8",
-    adults: "£8",
+    kids: "£12/£10",
+    adults: "£12/£10",
     features: [
+      "BLOCK BOOKING goes for £10, AD HOC for £12.",
       "Court access during regular hours.",
       "Family-friendly for all skill levels.",
       "Bring your own or rent equipment.",
@@ -99,8 +100,8 @@ export const pricing = [
   {
     name: "Family Plan",
     desc: "Exclusive court access anytime, complimentary racket rentals for ultimate family fun.",
-    kids: "£8",
-    adults: "£8",
+    kids: "£10",
+    adults: "£10",
     features: [
       "Exclusive and unlimited parents and kids court access.",
       "Flexible playing hours.",
@@ -110,12 +111,23 @@ export const pricing = [
   {
     name: "Coached Session",
     desc: "Personalized training from a pro coach for improved skills and family bonding.",
-    kids: "£8",
-    adults: "£15",
+    kids: "£10",
+    adults: "£10",
     features: [
       "Personalized training with coach.",
       "Focus on techniques and tactics.",
       "Strengthen family bonds.",
+    ],
+  },
+  {
+    name: "One-On-One Coaching",
+    desc: "One-On-One provides personalized guidance and support tailored to your specific goals and challenges.",
+    kids: "£35",
+    adults: "£35",
+    features: [
+      "Personalized training with coach.",
+      "Focus on techniques and tactics.",
+      "Achievement in your personal or professional life.",
     ],
   },
 ];

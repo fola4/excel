@@ -19,7 +19,7 @@ function Footer() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 self-center lg:grid-cols-3">
+        <div className="flex flex-wrap gap-8 justify-center align-center">
           {pricing.map((feature, index) => (
             <CardPlan
               name={feature.name}
