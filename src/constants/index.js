@@ -37,7 +37,7 @@ export const teamMembers = [
     status: "coach",
   },
   {
-    name: "Grace Odusola",
+    name: "Mary Godwin",
     image: placeholder,
   },
   {
@@ -45,7 +45,7 @@ export const teamMembers = [
     image: placeholder,
   },
   {
-    name: "Mary Godwin",
+    name: "Gordon Santos",
     image: placeholder,
   },
   {
