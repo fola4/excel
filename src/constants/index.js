@@ -45,7 +45,7 @@ export const teamMembers = [
     image: placeholder,
   },
   {
-    name: "Gordon Santos",
+    name: "Mary Godwin",
     image: placeholder,
   },
   {
