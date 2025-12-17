@@ -37,7 +37,11 @@ function Footer() {
       {/* <!-- badminton --> */}
       <div className="flex flex-col items-center gap-y-8 md:flex-row md:justify-between">
         <div>
+          <div className="flex gap-2">
           <img src={logo} alt="logo" className="mx-auto w-28 md:m-0" />
+          <img src={logo} alt="logo" className="mx-auto w-28 md:m-0" />
+          </div>
+          
           <a href="#" id="logo" className="font-light">
             <p className="text-center text-2xl tracking-widest">
               Embrace <span className="text-red-600">Diversity</span>, Elevate
