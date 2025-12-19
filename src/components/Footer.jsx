@@ -36,7 +36,9 @@ function Footer() {
 
       {/* <!-- badminton --> */}
       <div className="flex flex-col items-center gap-y-8 md:flex-row md:justify-between">
-        <div>
+  
+        <div className="flex gap-2">
+          <img src={logo} alt="logo" className="mx-auto w-28 md:m-0" />
           <img src={logo} alt="logo" className="mx-auto w-28 md:m-0" />
           <img src={tennisnuts} alt="logo" />
           <a href="badmintonexcel.com" id="logo" className="font-light">
