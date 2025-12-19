@@ -38,10 +38,12 @@ function Footer() {
       <div className="flex flex-col items-center gap-y-8 md:flex-row md:justify-between">
         <div>
           <img src={logo} alt="logo" className="mx-auto w-28 md:m-0" />
-          <a href="#" id="logo" className="font-light">
+          <img src={tennisnuts} alt="logo" />
+          <a href="badmintonexcel.com" id="logo" className="font-light">
+            <img src="" alt="" />
             <p className="text-center text-2xl tracking-widest">
               Embrace <span className="text-red-600">Diversity</span>, Elevate
-              Skills, <span className="text-red-600">Achieve</span> Fitness !
+              Skills, <span className="text-red-600">Achieve</span> Fitness!
             </p>
           </a>
         </div>
@@ -52,7 +54,7 @@ function Footer() {
           </h4>
           <Link to="/membership#membership">
             <button className="whitespace-nowrap rounded-3xl border border-white px-5 py-2 text-white hover:bg-black hover:text-white">
-              Register with us !
+              Register with us!
             </button>
           </Link>
         </div>

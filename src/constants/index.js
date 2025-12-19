@@ -32,16 +32,16 @@ export const teamMembers = [
     image: placeholder,
   },
   {
-    name: "Tushar Unalkat",
+    name: "Kofo Oluwo",
     image: placeholder,
     status: "coach",
   },
   {
-    name: "Grace Odusola",
+    name: "Molly Martins",
     image: placeholder,
   },
   {
-    name: "Gitesh Patel",
+    name: "Mary Godwin",
     image: placeholder,
   },
   {
