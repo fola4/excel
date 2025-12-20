@@ -4,6 +4,7 @@ import CardPlan from "./CardPlan";
 import SocialIcon from "./SocialIcon";
 import { Link } from "react-router-dom";
 import { logo } from "../assets/images";
+import tennisnuts from "../assets/images/tennisnuts.jpeg";
 
 function Footer() {
   return (
@@ -35,14 +36,19 @@ function Footer() {
       </div>
 
       {/* <!-- badminton --> */}
+      <div className="flex gap-2 items-center">
+        <a href="https://badmintonexcel.com">
+          <img src={logo} alt="logo" className="mx-auto w-28 md:m-0" />
+        </a>
+
+        <a href="https://tennisnuts.com" target="_blank">
+          <img src={tennisnuts} alt="logo" className="w-48 h-full p-0.5 bg-white" />
+        </a>
+      </div>
+
       <div className="flex flex-col items-center gap-y-8 md:flex-row md:justify-between">
-  
-        <div className="flex gap-2">
-          <img src={logo} alt="logo" className="mx-auto w-28 md:m-0" />
-          <img src={logo} alt="logo" className="mx-auto w-28 md:m-0" />
-          <img src={tennisnuts} alt="logo" />
+        <div>
           <a href="badmintonexcel.com" id="logo" className="font-light">
-            <img src="" alt="" />
             <p className="text-center text-2xl tracking-widest">
               Embrace <span className="text-red-600">Diversity</span>, Elevate
               Skills, <span className="text-red-600">Achieve</span> Fitness!
