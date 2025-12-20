@@ -3,11 +3,11 @@ import React from "react";
 function CardPlan({ name, price, description, features, kids, adults }) {
   return (
     <div
-      className={`rounded-2xl w-[30%] border p-8 ${
+      className={`rounded-2xl sm:w-[30%] border p-8 ${
         name === "Family Plan" ? "border-2 border-red-600" : "border-gray-400"
       } transition duration-150 hover:scale-105`}
     >
-      <div className="flex flex-col items-center gap-y-3 sm:flex-row sm:justify-between">
+      <div className="md:flex flex-col items-center gap-y-3 sm:flex-row sm:justify-between">
         <h4 className="text-lg font-bold">{name}</h4>
         {name === "Family Plan" && (
           <p className="rounded-3xl bg-red-500 px-3 py-1 text-sm font-bold">
